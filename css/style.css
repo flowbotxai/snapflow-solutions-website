@@ -2268,7 +2268,13 @@ body.audit-dialog-open { overflow: hidden; }
 }
 .ranking-report-card__heading p,
 .ranking-report-card__privacy { color: var(--muted); line-height: 1.6; }
-.ranking-report-card__widget { min-height: 520px; margin-top: 24px; }
+.ranking-report-card__widget { min-width: 0; min-height: 520px; margin-top: 24px; overflow-x: clip; }
+.ranking-report-card__widget > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
 .ranking-report-card__privacy { margin: 20px 0 0; font-size: 13px; }
 .ranking-report-card__privacy a { color: var(--navy); text-underline-offset: 3px; }
 .ranking-next { padding: clamp(64px, 8vw, 110px) 0; background: var(--navy); color: var(--white); }
