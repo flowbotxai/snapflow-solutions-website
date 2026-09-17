@@ -80,6 +80,30 @@
   // browser, page source, and repository.
   var contactForm = document.querySelector('.contact__form');
 
+  // -- Local visibility audit modal ------------------------------------
+  var auditDialog = document.getElementById('visibilityAudit');
+  if (auditDialog && typeof auditDialog.showModal === 'function') {
+    document.querySelectorAll('[data-audit-open]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        auditDialog.showModal();
+        document.body.classList.add('audit-dialog-open');
+        if (window.gtag) window.gtag('event', 'audit_widget_open');
+      });
+    });
+
+    document.querySelectorAll('[data-audit-close]').forEach(function (button) {
+      button.addEventListener('click', function () { auditDialog.close(); });
+    });
+
+    auditDialog.addEventListener('click', function (event) {
+      if (event.target === auditDialog) auditDialog.close();
+    });
+
+    auditDialog.addEventListener('close', function () {
+      document.body.classList.remove('audit-dialog-open');
+    });
+  }
+
   if (contactForm && window.fetch) {
     var submitBtn = contactForm.querySelector('[type="submit"]');
     var sending = false;

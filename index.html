@@ -89,7 +89,7 @@
       </nav>
       <div class="site-header__actions">
         <a href="tel:+15863109494" class="site-header__phone" data-track="phone_tap">(586) 310-9494</a>
-        <a href="#contact" class="btn btn--primary btn--sm">Send a Message</a>
+        <button type="button" class="btn btn--primary btn--sm" data-audit-open>Free Visibility Audit</button>
       </div>
       <button class="site-header__toggle" type="button"
               aria-label="Menu" aria-controls="siteNav" aria-expanded="false">
@@ -105,7 +105,8 @@
         <h1 class="hero__title">We help business owners build better businesses.</h1>
         <p class="hero__sub">Need one project built &mdash; a website, Google Ads, local SEO, a CRM, AI answering, or better reporting? We&rsquo;ll build it. Not sure where to start? We&rsquo;ll use your operational and marketing data to find the improvements worth making, so the business becomes more profitable, more organized, and less dependent on you.</p>
         <div class="hero__actions">
-          <a href="#contact" class="btn btn--primary">Send Us a Message</a>
+          <button type="button" class="btn btn--primary" data-audit-open>Get a Free Visibility Audit</button>
+          <a href="#contact" class="btn btn--outline">Send Us a Message</a>
           <a href="tel:+15863109494" class="btn btn--gold" data-track="phone_tap">Call or Text Us</a>
         </div>
       </div>
@@ -588,6 +589,21 @@
       </div>
     </div>
   </section>
+
+  <dialog class="audit-dialog" id="visibilityAudit" aria-labelledby="visibilityAuditTitle">
+    <div class="audit-dialog__panel">
+      <button type="button" class="audit-dialog__close" data-audit-close aria-label="Close visibility audit">&times;</button>
+      <div class="audit-dialog__intro">
+        <span class="section__label">Free local visibility audit</span>
+        <h2 id="visibilityAuditTitle">See what customers find before they call you.</h2>
+        <p>Get a practical snapshot of your website, Google Business Profile, reviews, listings and local search visibility. The audit is a starting point for improving customer acquisition&mdash;not a substitute for a full business-growth plan.</p>
+      </div>
+      <div class="audit-dialog__widget">
+        <script src="https://services.leadconnectorhq.com/prospecting/client/widget-embed.js" data-widget-id="6aac1fa520d8d544d394271c"></script>
+      </div>
+      <p class="audit-dialog__privacy">By requesting the audit, you agree that Snap Flow Solutions may contact you about your results. See our <a href="/privacy-policy/">privacy policy</a>.</p>
+    </div>
+  </dialog>
 
   <section class="section contact" id="contact">
     <div class="container">
