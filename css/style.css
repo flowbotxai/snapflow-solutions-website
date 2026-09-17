@@ -2194,12 +2194,28 @@ body.audit-dialog-open { overflow: hidden; }
 
 @media (max-width: 620px) {
   .audit-dialog {
-    align-items: flex-start;
-    padding: 8px;
+    align-items: center;
+    padding: 18px 14px;
   }
   .audit-dialog__panel {
     width: 100%;
-    max-height: calc(100vh - 16px);
-    padding: 56px 18px 24px;
+    max-height: 82vh;
+    max-height: 82dvh;
+    padding: 56px 18px 26px;
+    border: 1px solid rgba(214, 173, 77, 0.55);
+    border-radius: 20px;
+    box-shadow: 0 22px 70px rgba(0, 0, 0, 0.42);
   }
+  .audit-dialog__panel::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    width: 42px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--gold);
+    transform: translateX(-50%);
+  }
+  .audit-dialog__close { top: 10px; right: 12px; }
 }
