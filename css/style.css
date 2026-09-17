@@ -1234,6 +1234,9 @@ ul { list-style: none; }
   font-size: 17px;
   font-weight: 600;
   color: var(--white);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
 .sticky-cta__half:first-child {
   border-right: 1px solid var(--gold-light);
