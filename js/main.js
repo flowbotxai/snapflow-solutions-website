@@ -98,12 +98,17 @@
       document.body.classList.remove('audit-dialog-open');
     }
 
-    document.querySelectorAll('[data-audit-open]').forEach(function (button) {
-      button.addEventListener('click', openAuditDialog);
-    });
-
-    document.querySelectorAll('[data-audit-close]').forEach(function (button) {
-      button.addEventListener('click', closeAuditDialog);
+    document.addEventListener('click', function (event) {
+      var openButton = event.target.closest('[data-audit-open]');
+      var closeButton = event.target.closest('[data-audit-close]');
+      if (openButton) {
+        event.preventDefault();
+        openAuditDialog();
+      }
+      if (closeButton) {
+        event.preventDefault();
+        closeAuditDialog();
+      }
     });
 
     auditDialog.addEventListener('click', function (event) {
