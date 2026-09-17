@@ -2131,8 +2131,15 @@ ul { list-style: none; }
 
 /* -- Local visibility audit modal -- */
 .audit-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
   width: min(920px, calc(100% - 32px));
   max-height: calc(100vh - 32px);
+  margin: auto;
   padding: 0;
   border: 0;
   border-radius: 22px;
@@ -2140,17 +2147,12 @@ ul { list-style: none; }
   color: var(--ink);
   box-shadow: 0 24px 80px rgba(10, 28, 43, 0.34);
 }
-.audit-dialog::backdrop {
-  background: rgba(10, 28, 43, 0.76);
-  backdrop-filter: blur(4px);
-}
-.audit-dialog.is-fallback-open {
-  position: fixed;
-  inset: 16px;
-  z-index: 2000;
+.audit-dialog.is-open {
+  display: flex;
   box-shadow: 0 0 0 100vmax rgba(10, 28, 43, 0.76),
               0 24px 80px rgba(10, 28, 43, 0.34);
 }
+.audit-dialog[hidden] { display: none !important; }
 .audit-dialog__panel {
   position: relative;
   padding: clamp(28px, 5vw, 52px);
@@ -2187,6 +2189,12 @@ ul { list-style: none; }
 body.audit-dialog-open { overflow: hidden; }
 
 @media (max-width: 620px) {
-  .audit-dialog { width: calc(100% - 16px); max-height: calc(100vh - 16px); }
-  .audit-dialog__panel { padding: 56px 18px 24px; }
+  .audit-dialog {
+    inset: 8px;
+    width: auto;
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+  }
+  .audit-dialog.is-open { display: block; }
+  .audit-dialog__panel { width: 100%; padding: 56px 18px 24px; }
 }

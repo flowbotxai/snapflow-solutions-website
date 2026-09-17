@@ -35,7 +35,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Newsreader:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/snapflow-mark-square.png">
   <link rel="apple-touch-icon" href="assets/snapflow-mark-square.png">
-  <link rel="stylesheet" href="css/style.css?v=20260917-3">
+  <link rel="stylesheet" href="css/style.css?v=20260917-4">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -590,7 +590,7 @@
     </div>
   </section>
 
-  <dialog class="audit-dialog" id="visibilityAudit" aria-labelledby="visibilityAuditTitle">
+  <div class="audit-dialog" id="visibilityAudit" role="dialog" aria-modal="true" aria-labelledby="visibilityAuditTitle" hidden>
     <div class="audit-dialog__panel">
       <button type="button" class="audit-dialog__close" data-audit-close aria-label="Close visibility audit">&times;</button>
       <div class="audit-dialog__intro">
@@ -603,7 +603,7 @@
       </div>
       <p class="audit-dialog__privacy">By requesting the audit, you agree that Snap Flow Solutions may contact you about your results. See our <a href="/privacy-policy/">privacy policy</a>.</p>
     </div>
-  </dialog>
+  </div>
 
   <section class="section contact" id="contact">
     <div class="container">
@@ -726,7 +726,7 @@
   <script async src="https://maps.googleapis.com/maps/api/js?key=[GOOGLE_MAPS_API_KEY]&loading=async&libraries=places&callback=initAddressAutocomplete"></script>
   -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-  <script src="js/main.js?v=20260917-3"></script>
+  <script src="js/main.js?v=20260917-4"></script>
   <script>
     /* UTM / click-ID capture, persistence, and conversion events */
     (function () {

@@ -84,28 +84,17 @@
   var auditDialog = document.getElementById('visibilityAudit');
   if (auditDialog) {
     function openAuditDialog() {
-      if (typeof auditDialog.showModal === 'function') {
-        try {
-          auditDialog.showModal();
-        } catch (error) {
-          auditDialog.setAttribute('open', '');
-          auditDialog.classList.add('is-fallback-open');
-        }
-      } else {
-        auditDialog.setAttribute('open', '');
-        auditDialog.classList.add('is-fallback-open');
-      }
+      auditDialog.hidden = false;
+      auditDialog.classList.add('is-open');
       document.body.classList.add('audit-dialog-open');
+      var closeButton = auditDialog.querySelector('[data-audit-close]');
+      if (closeButton) closeButton.focus();
       if (window.gtag) window.gtag('event', 'audit_widget_open');
     }
 
     function closeAuditDialog() {
-      if (typeof auditDialog.close === 'function' && auditDialog.open) {
-        auditDialog.close();
-      } else {
-        auditDialog.removeAttribute('open');
-      }
-      auditDialog.classList.remove('is-fallback-open');
+      auditDialog.classList.remove('is-open');
+      auditDialog.hidden = true;
       document.body.classList.remove('audit-dialog-open');
     }
 
@@ -121,8 +110,8 @@
       if (event.target === auditDialog) closeAuditDialog();
     });
 
-    auditDialog.addEventListener('close', function () {
-      document.body.classList.remove('audit-dialog-open');
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !auditDialog.hidden) closeAuditDialog();
     });
   }
 
