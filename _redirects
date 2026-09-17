@@ -33,3 +33,14 @@ https://www.aidentguy.com/privacy-policy/* https://snapflowsolutions.com/privacy
 # Old articles, archives, test pages and any unknown legacy URL are retired.
 https://aidentguy.com/* /retired-content.html 404!
 https://www.aidentguy.com/* /retired-content.html 404!
+
+# Consolidate retired Snap Flow location and campaign URLs into the closest
+# current Michigan page. These explicit rules are intentionally listed here
+# (rather than relying only on a catch-all) so old indexed Georgia URLs pass
+# their signals to a relevant live page.
+/ai-lead-capture /operations-automation/ 301!
+/ai-lead-capture/* /operations-automation/ 301!
+/chattanooga /service-area/ 301!
+/chattanooga/* /service-area/ 301!
+/ringgold /service-area/ 301!
+/ringgold/* /service-area/ 301!
