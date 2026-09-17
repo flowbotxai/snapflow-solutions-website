@@ -82,21 +82,43 @@
 
   // -- Local visibility audit modal ------------------------------------
   var auditDialog = document.getElementById('visibilityAudit');
-  if (auditDialog && typeof auditDialog.showModal === 'function') {
+  if (auditDialog) {
+    function openAuditDialog() {
+      if (typeof auditDialog.showModal === 'function') {
+        try {
+          auditDialog.showModal();
+        } catch (error) {
+          auditDialog.setAttribute('open', '');
+          auditDialog.classList.add('is-fallback-open');
+        }
+      } else {
+        auditDialog.setAttribute('open', '');
+        auditDialog.classList.add('is-fallback-open');
+      }
+      document.body.classList.add('audit-dialog-open');
+      if (window.gtag) window.gtag('event', 'audit_widget_open');
+    }
+
+    function closeAuditDialog() {
+      if (typeof auditDialog.close === 'function' && auditDialog.open) {
+        auditDialog.close();
+      } else {
+        auditDialog.removeAttribute('open');
+      }
+      auditDialog.classList.remove('is-fallback-open');
+      document.body.classList.remove('audit-dialog-open');
+    }
+
     document.querySelectorAll('[data-audit-open]').forEach(function (button) {
-      button.addEventListener('click', function () {
-        auditDialog.showModal();
-        document.body.classList.add('audit-dialog-open');
-        if (window.gtag) window.gtag('event', 'audit_widget_open');
-      });
+      button.addEventListener('click', openAuditDialog);
     });
 
     document.querySelectorAll('[data-audit-close]').forEach(function (button) {
-      button.addEventListener('click', function () { auditDialog.close(); });
+      button.addEventListener('click', closeAuditDialog);
     });
 
     auditDialog.addEventListener('click', function (event) {
-      if (event.target === auditDialog) auditDialog.close();
+      if (event.target === auditDialog) closeAuditDialog();
     });
 
     auditDialog.addEventListener('close', function () {

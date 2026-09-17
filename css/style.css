@@ -2144,6 +2144,13 @@ ul { list-style: none; }
   background: rgba(10, 28, 43, 0.76);
   backdrop-filter: blur(4px);
 }
+.audit-dialog.is-fallback-open {
+  position: fixed;
+  inset: 16px;
+  z-index: 2000;
+  box-shadow: 0 0 0 100vmax rgba(10, 28, 43, 0.76),
+              0 24px 80px rgba(10, 28, 43, 0.34);
+}
 .audit-dialog__panel {
   position: relative;
   padding: clamp(28px, 5vw, 52px);
