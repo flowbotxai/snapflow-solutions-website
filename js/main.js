@@ -5,15 +5,29 @@
 (function () {
   'use strict';
 
-  // Add the existing-client request hub to compact service-page headers that
-  // share this script. The homepage and hub already include the link in HTML.
+  // Keep the acquisition and existing-client destinations available in the
+  // compact service-page headers that share this script.
   document.querySelectorAll('.site-header__nav').forEach(function (nav) {
+    if (!nav.querySelector('a[href="/free-ranking-report/"]')) {
+      var reportLink = document.createElement('a');
+      reportLink.href = '/free-ranking-report/';
+      reportLink.textContent = 'Free Ranking Report';
+      nav.appendChild(reportLink);
+    }
     if (!nav.querySelector('a[href="/client-requests/"]')) {
       var requestLink = document.createElement('a');
       requestLink.href = '/client-requests/';
       requestLink.textContent = 'Client Requests';
       nav.appendChild(requestLink);
     }
+  });
+
+  document.querySelectorAll('a[href="/free-ranking-report/"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'audit_page_open', { link_url: link.href });
+      }
+    });
   });
 
   // -- Existing-client request journey ----------------------------------
