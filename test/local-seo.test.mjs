@@ -36,3 +36,13 @@ test('local entity markup names the primary Michigan market', async () => {
   assert.match(serviceArea, /Metro Detroit/);
   assert.match(serviceArea, /meta name="geo\.placename" content="Clinton Township"/);
 });
+
+test('commercial metadata leads with Macomb County without narrowing the physical location', async () => {
+  const home = await read('index.html');
+  const localSeo = await read('local-seo/index.html');
+
+  assert.match(home, /<title>Marketing Agency in Macomb County \| Snap Flow Solutions<\/title>/);
+  assert.match(home, /Macomb County marketing agency helping service businesses/);
+  assert.match(localSeo, /<title>Local SEO Services in Macomb County \| Snap Flow<\/title>/);
+  assert.match(localSeo, /Local SEO and Google Maps visibility for Macomb County service businesses/);
+});
