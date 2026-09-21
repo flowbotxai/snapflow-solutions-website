@@ -22,6 +22,8 @@ test('retired Georgia campaign URLs permanently redirect to current pages', asyn
   const redirects = await read('_redirects');
 
   assert.match(redirects, /^\/ai-lead-capture\/\* \/operations-automation\/ 301!$/m);
+  assert.match(redirects, /^\/ai-search-visibility\/\* \/local-seo\/ 301!$/m);
+  assert.match(redirects, /^\/about\/\* \/ 301!$/m);
   assert.match(redirects, /^\/chattanooga\/\* \/service-area\/ 301!$/m);
   assert.match(redirects, /^\/ringgold\/\* \/service-area\/ 301!$/m);
 });

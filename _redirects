@@ -40,6 +40,10 @@ https://www.aidentguy.com/* /retired-content.html 404!
 # their signals to a relevant live page.
 /ai-lead-capture /operations-automation/ 301!
 /ai-lead-capture/* /operations-automation/ 301!
+/ai-search-visibility /local-seo/ 301!
+/ai-search-visibility/* /local-seo/ 301!
+/about / 301!
+/about/* / 301!
 /chattanooga /service-area/ 301!
 /chattanooga/* /service-area/ 301!
 /ringgold /service-area/ 301!
