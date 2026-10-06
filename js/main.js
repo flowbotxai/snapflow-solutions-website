@@ -212,7 +212,7 @@
         }
         showError(
           'That didn’t send — check your connection and try again, ' +
-          'or call or text us at (586) 310-9494.'
+          'or call or text us at (586) 400-2943.'
         );
       });
     });

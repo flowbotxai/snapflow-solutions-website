@@ -13,7 +13,7 @@ test('public pages use the current Michigan phone and location', async () => {
   const publicCopy = pages.join('\n');
 
   assert.match(publicCopy, /Clinton Township/);
-  assert.match(publicCopy, /\+1-586-310-9494|\+15863109494/);
+  assert.match(publicCopy, /\+1-586-400-2943|\+15864002943/);
   assert.doesNotMatch(publicCopy, /423[- )]208[- ]9982/);
   assert.doesNotMatch(publicCopy, /Ringgold|Chattanooga/i);
 });
