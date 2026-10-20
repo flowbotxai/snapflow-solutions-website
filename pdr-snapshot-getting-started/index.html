@@ -67,7 +67,7 @@
           <h2>Understand what was delivered.</h2>
           <ul>
             <li>Ten-stage PDR lead-to-job opportunity pipeline</li>
-            <li>Ten coordinated Draft workflows covering intake through review</li>
+            <li>Coordinated Draft workflows covering intake through review, with an optional voice photo follow-up path</li>
             <li>Damage-inspection calendar and PDR intake fields</li>
             <li>Customer and damage-photo intake form</li>
             <li>Reusable tags, custom values and message templates</li>
@@ -120,7 +120,7 @@
             <thead><tr><th>Feature choice</th><th>What to review before enabling or disabling it</th></tr></thead>
             <tbody>
               <tr><td>Customers book inspections themselves</td><td>Review the inspection calendar, public booking links, appointment messages and the Voice AI Appointment Booking action. For staff-arranged inspections, remove public booking offers and links, remove or disable the AI booking action, and change the AI instructions to collect a request for staff follow-up. Keep the handoff and owner notification configured. Pausing a confirmation workflow alone does not disable booking. Test both the public link and the voice agent.</td></tr>
-              <tr><td>Damage photo texts</td><td>Review the Voice AI actions and post-call workflow, New Lead &amp; Damage Intake, Missed Call &amp; Intake Recovery, Incomplete Damage Intake Recovery, and form instructions. If you do not want photo requests, remove those requests and their reminders wherever used, update the AI instructions, and stop existing queued requests. Preserve contact capture and staff alerts. Test that no photo request is sent.</td></tr>
+              <tr><td>Damage photo texts</td><td>Review the Voice AI actions and PDR - Voice Intake &amp; Photo Follow-Up, New Lead &amp; Damage Intake, Missed Call &amp; Intake Recovery, Incomplete Damage Intake Recovery, and form instructions. If you do not want photo requests, remove those requests and their reminders wherever used, update the AI instructions, and stop existing queued requests. Preserve contact capture and staff alerts. Test that no photo request is sent.</td></tr>
               <tr><td>Missed-call text back</td><td>Review PDR - Missed Call &amp; Intake Recovery and the phone routing. Enable the form response only for a genuinely missed call with no intake already captured. If you turn it off, confirm that the shop still has a way to return missed calls.</td></tr>
               <tr><td>Intake or estimate follow-ups</td><td>Review the applicable recovery and follow-up workflows, their trigger tags, waits and exit conditions. Return unwanted workflows to Draft and check enrolled contacts for queued messages. Confirm staff know which follow-up they must handle manually.</td></tr>
               <tr><td>Voice or text AI</td><td>Each is optional. Keep unused agents Off or unassigned from live numbers/channels. Review any workflows that invoke them. The shop can use staff-led intake without enabling AI.</td></tr>
@@ -151,6 +151,7 @@
             <li>Connect the correct phone number and verify the Voice AI transfer destination.</li>
             <li>Test pricing, repairability, insurance, legal, safety and unknown-question boundaries.</li>
             <li>Test human handoff, manual staff replies, conversation limits, summaries and STOP/DND behavior.</li>
+            <li>If using voice photo follow-up, verify that PDR Voice Photo Consent and PDR Voice Intake Status update only after the call. Review the separate photo follow-up workflow and the voice-intake exclusions in new-lead, missed-call and incomplete-intake recovery before enabling them together. Test both permission granted and permission declined, including a returning caller.</li>
             <li>Activate AI only after the buyer accepts the applicable usage charges and every critical test passes.</li>
           </ul>
         </section>
