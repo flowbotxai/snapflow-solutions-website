@@ -44,6 +44,7 @@
         <a href="#included">What is included</a>
         <a href="#install">Install the snapshot</a>
         <a href="#configure">Required configuration</a>
+        <a href="#customize">Choose your features</a>
         <a href="#ai">AI setup</a>
         <a href="#test">Testing</a>
         <a href="#launch">Launch checklist</a>
@@ -54,7 +55,12 @@
         <section class="guide-section" id="choose">
           <span class="guide-label">Step 1</span>
           <h2>Choose the right setup path.</h2>
-          <p>Your Marketplace purchase determines who performs the initial configuration. Both options require your own eligible account and your own provider subscriptions and usage billing.</p>
+          <p>Your Marketplace purchase determines who performs the initial configuration. Both options cover one PDR company and require your own eligible account and your own provider subscriptions and usage billing. Unrelated companies require separate licenses; the protected snapshot may not be redistributed or resold.</p>
+          <h3>License scope: one named PDR company per purchase.</h3>
+          <p>Your purchase grants a non-exclusive license to configure and use the included snapshot assets for one named PDR company. An agency may install and manage the system on that company's behalf. Agency installation eligibility does not grant a license for every agency client. Each unrelated company requires a separate purchase or a separate written license from SnapFlow Solutions.</p>
+          <p>You may customize the assets for the licensed company's operations. You may not resell, sublicense, give away or redistribute the snapshot or its included assets as a standalone product, template bundle or agency offering. Installation and provider usage remain subject to the purchased plan's scope.</p>
+          <p>Keep the purchase receipt, licensed company name and agreed destination location together. Contact support before moving the installation to another company or extending the license.</p>
+          <div class="guide-callout"><strong>Platform protection is not a one-company lock.</strong> HighLevel Assets Protection restricts external redistribution to another agency but permits reuse within the receiving agency. That technical capability does not expand this purchase's license scope.</div>
           <div class="guide-cards">
             <article class="guide-card guide-card--accent"><h3>Self Install</h3><div class="guide-price">$297 one time</div><p>You install and configure the snapshot using this guide. You are responsible for the destination account, integrations, personalization, compliance review, testing and activation.</p></article>
             <article class="guide-card"><h3>Installed for You</h3><div class="guide-price">$699 one time</div><p>SnapFlow Solutions configures the included system after receiving your completed intake information and authorized account access. Custom development, migration and ongoing management are outside the standard installation scope.</p></article>
@@ -66,7 +72,7 @@
           <h2>Understand what was delivered.</h2>
           <ul>
             <li>Ten-stage PDR lead-to-job opportunity pipeline</li>
-            <li>Ten coordinated Draft workflows covering intake through review</li>
+            <li>Coordinated Draft workflows covering intake through review, with an optional voice photo follow-up path</li>
             <li>Damage-inspection calendar and PDR intake fields</li>
             <li>Customer and damage-photo intake form</li>
             <li>Reusable tags, custom values and message templates</li>
@@ -81,9 +87,11 @@
           <span class="guide-label">Step 3</span>
           <h2>Install into the correct location.</h2>
           <ol>
-            <li>Sign in to the account that will own and operate the PDR system.</li>
-            <li>For the safest installation, create a new sub-account/location for the business.</li>
-            <li>Install the purchased snapshot into that location.</li>
+            <li>Before purchasing, confirm that an agency administrator can install the snapshot into the intended location. Sub-account access alone does not provide installation permission.</li>
+            <li>After purchase, retain your receipt and plan name. Sign in to the purchasing agency account and use the purchased snapshot in your HighLevel dashboard to push it to the agreed location.</li>
+            <li>Choose a clean location for the business. Reuse an appropriate existing empty location, or create a new one only if needed. Review overlaps before importing into an active location.</li>
+            <li>Confirm the delivery release with SnapFlow support before importing. The current internal QA candidate is PDR Lead-to-Job RC 2026-10-08 v3, refreshed October 20, 2026, with 11 workflows, 21 tags and 113 total assets. It remains subject to release acceptance; do not activate it based on the asset count alone.</li>
+            <li>Install the purchased snapshot into the agreed location and record the release name and installation date.</li>
             <li>If installing into an active location, first document existing pipelines, fields, forms, calendars and workflows. Imported assets may create duplicates.</li>
             <li>After import, confirm that the pipeline, calendar, form, custom fields, tags, custom values, workflows and AI templates are present.</li>
             <li>Do not delete similarly named assets until you know which version is connected to existing forms, websites or automations.</li>
@@ -95,7 +103,7 @@
           <h2>Replace every placeholder and connect your services.</h2>
           <ul class="guide-checklist">
             <li>Replace the business name, main phone, website, service area and shop address.</li>
-            <li>Replace the booking link, Google review link, privacy-policy URL and terms URL.</li>
+            <li>Replace the photo-upload link, booking link, Google review link, privacy-policy URL and terms URL.</li>
             <li>Add the correct users and assign an owner for leads, alerts and escalations.</li>
             <li>Set the location time zone, business hours and calendar availability.</li>
             <li>Configure appointment duration, buffers, notice rules and assigned calendars.</li>
@@ -106,14 +114,41 @@
             <li>Review every email and SMS message for accuracy, tone and approved business information.</li>
           </ul>
           <h3>Recommended photo instructions</h3>
-          <p>Ask the customer for at least three images: a full vehicle/context photo, a straight-on damage photo and an angled or reflection photo showing dent depth. Photos support preliminary review only and do not guarantee repairability or a final price.</p>
+          <p>Ask for up to four clear images: a wider view of the damaged panel, a close-up and two angled views. If intake was already collected by voice, request pictures by reply after the call, with permission; do not send the full form again. Photos help prepare for an inspection and do not guarantee repairability or a final price.</p>
+        </section>
+
+        <section class="guide-section" id="customize">
+          <span class="guide-label">Your shop, your process</span>
+          <h2>Choose the features your business wants.</h2>
+          <p>You do not need to use every workflow or offer online scheduling. Before activation, record your choices with the person who handles your leads. Leave unwanted workflows in Draft and unwanted AI features Off. Keep a copy of the original configuration before editing.</p>
+          <table class="guide-table">
+            <thead><tr><th>Feature choice</th><th>What to review before enabling or disabling it</th></tr></thead>
+            <tbody>
+              <tr><td>Customers book inspections themselves</td><td>Review the inspection calendar, public booking links, appointment messages and the Voice AI Appointment Booking action. For staff-arranged inspections, remove public booking offers and links, remove or disable the AI booking action, and change the AI instructions to collect a request for staff follow-up. Keep the handoff and owner notification configured. Pausing a confirmation workflow alone does not disable booking. Test both the public link and the voice agent.</td></tr>
+              <tr><td>Damage photo texts</td><td>Review the Voice AI actions and PDR - Voice Intake &amp; Photo Follow-Up, New Lead &amp; Damage Intake, Missed Call &amp; Intake Recovery, Incomplete Damage Intake Recovery, and form instructions. If you do not want photo requests, remove those requests and their reminders wherever used, update the AI instructions, and stop existing queued requests. Preserve contact capture and staff alerts. Test that no photo request is sent.</td></tr>
+              <tr><td>Missed-call text back</td><td>Review PDR - Missed Call &amp; Intake Recovery and the phone routing. Enable the form response only for a genuinely missed call with no intake already captured. If you turn it off, confirm that the shop still has a way to return missed calls.</td></tr>
+              <tr><td>Intake or estimate follow-ups</td><td>Review the applicable recovery and follow-up workflows, their trigger tags, waits and exit conditions. Return unwanted workflows to Draft and check enrolled contacts for queued messages. Confirm staff know which follow-up they must handle manually.</td></tr>
+              <tr><td>Voice or text AI</td><td>Each is optional. Keep unused agents Off or unassigned from live numbers/channels. Review any workflows that invoke them. The shop can use staff-led intake without enabling AI.</td></tr>
+              <tr><td>Review requests</td><td>Review PDR - Repair Completion &amp; Review Request, its completion trigger, review URL and suppression rules. Leave it in Draft if reviews will be requested manually. Requests must be neutral; do not select recipients based on whether you expect a positive review.</td></tr>
+            </tbody>
+          </table>
+          <h3>One intake, then only missing information.</h3>
+          <p>A missed call with no captured intake may receive the full intake form. When the voice assistant has already collected the details, it must save those details and ask only for anything missing or changed. If photo texts are enabled and the caller agrees, send a photo-only request after the call ends so the customer can reply with pictures. Do not send the same customer back through the full form.</p>
+          <h3>Changing a feature that is already live</h3>
+          <ol>
+            <li>Record the current configuration and return the affected workflows to Draft before changing them.</li>
+            <li>Review Enrollment History and pending actions for those workflows. Remove affected contacts from obsolete sequences using the supported workflow controls; do not assume a Draft switch alone has cancelled every queued message.</li>
+            <li>Update the related AI actions and instructions, public links, calendar availability, message copy and internal assignments.</li>
+            <li>Run a controlled test for the enabled path and the disabled path. Check messages, bookings, staff alerts and pending actions before resuming live traffic.</li>
+          </ol>
+          <div class="guide-callout"><strong>Need help choosing or changing a feature?</strong> Contact SnapFlow support with your feature choice and destination location. Do not share passwords or authentication codes. Ask for help if a dependency or queued action is unclear.</div>
         </section>
 
         <section class="guide-section" id="ai">
           <span class="guide-label">Step 5</span>
           <h2>Keep AI disabled until it is personalized and tested.</h2>
           <p>The core snapshot does not require AI. The included Conversation AI and Voice AI assets are frameworks that require additional configuration, eligible account features and buyer-funded usage.</p>
-          <div class="guide-callout"><strong>Recommended Voice AI starting point:</strong> When available in the buyer's account, start testing with OpenAI GPT-Realtime-2.1 and the Cedar voice. OpenAI identifies Cedar and Marin as its recommended voices for best quality, so Marin is the preferred alternate when Cedar does not fit the business. This is a starting recommendation, not a universal guarantee: compare both voices using real PDR call scenarios, confirm current HighLevel availability and pricing, and choose the configuration that provides the clearest, most natural and most reliable customer experience.</div>
+          <div class="guide-callout"><strong>Choose from the options available in your account.</strong> Confirm current HighLevel model and voice availability, feature eligibility and usage pricing before choosing a configuration. Test real PDR scenarios for clear speech, accurate information, reliable booking and human handoff. No specific model or voice is required by the core snapshot.</div>
           <ul>
             <li>Confirm that the buyer's plan and billing support the desired AI features.</li>
             <li>Personalize the knowledge base with approved services, hours, service area, location, policies and escalation rules.</li>
@@ -121,6 +156,7 @@
             <li>Connect the correct phone number and verify the Voice AI transfer destination.</li>
             <li>Test pricing, repairability, insurance, legal, safety and unknown-question boundaries.</li>
             <li>Test human handoff, manual staff replies, conversation limits, summaries and STOP/DND behavior.</li>
+            <li>If using voice photo follow-up, verify that PDR Voice Photo Consent and PDR Voice Intake Status update only after the call. Review the separate photo follow-up workflow and the voice-intake exclusions in new-lead, missed-call and incomplete-intake recovery before enabling them together. Test both permission granted and permission declined, including a returning caller.</li>
             <li>Activate AI only after the buyer accepts the applicable usage charges and every critical test passes.</li>
           </ul>
         </section>
@@ -134,11 +170,14 @@
             <tbody>
               <tr><td>New inquiry</td><td>Contact, fields, tags and opportunity are created correctly.</td></tr>
               <tr><td>Photo intake</td><td>Upload works on desktop and mobile and the images reach the correct contact.</td></tr>
-              <tr><td>Missed call</td><td>The approved response is sent once and respects consent and quiet-hour rules.</td></tr>
+              <tr><td>Missed call</td><td>With no intake captured, the approved form response is sent once and respects consent, DND and quiet-hour rules.</td></tr>
+              <tr><td>Completed voice intake</td><td>Details save to the correct contact. With consent, a photo-only text arrives after hangup. No full intake form or duplicate form reminder follows. Declining texts results in no photo SMS.</td></tr>
+              <tr><td>Disabled features</td><td>With self-scheduling disabled, neither the AI nor public links allow unwanted booking. With photo texts disabled, no photo request or queued reminder is sent. Staff alerts still work.</td></tr>
               <tr><td>Inspection booking</td><td>Correct calendar, availability, owner, confirmation and reminders are used.</td></tr>
               <tr><td>Estimate follow-up</td><td>Messages start and stop at the intended stages without duplicates.</td></tr>
-              <tr><td>Cancellation/no-show</td><td>Recovery messages and opportunity stages update correctly.</td></tr>
-              <tr><td>Review request</td><td>The request uses the correct review link and only sends after a completed repair.</td></tr>
+              <tr><td>Cancellation/no-show and rebooking</td><td>Recovery messages and opportunity stages update correctly. A new booking stops obsolete recovery and reminders.</td></tr>
+              <tr><td>Completed intake and closed jobs</td><td>Photo completion stops remaining intake reminders. Closed, completed or human-owned cases stop the applicable follow-up sequences.</td></tr>
+              <tr><td>Review request</td><td>One neutral request uses the correct review link after eligible completion. Manual suppression, including during a wait, prevents sending; repeated completion does not duplicate it.</td></tr>
               <tr><td>STOP/DND</td><td>Opt-out is recorded and no further automated assistance is sent.</td></tr>
               <tr><td>AI handoff</td><td>The correct user is alerted and automation does not compete with the human.</td></tr>
               <tr><td>Voice transfer</td><td>The call reaches the intended person and the post-call workflow behaves correctly.</td></tr>
@@ -164,7 +203,8 @@
         <section class="guide-section guide-support" id="support">
           <span class="guide-label">Support</span>
           <h2>Need help with delivery or configuration?</h2>
-          <p>Email <a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a> or call/text <a href="tel:+15864002943">(586) 400-2943</a>. Include your company name, purchase option, destination account/location and a clear description of the step that needs attention.</p>
+          <p>Email <a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a> or call/text product support at <a href="tel:+15864882843" data-track="phone_tap">(586) 488-2843</a>. Include your company name, purchase option, destination account/location and a clear description of the step that needs attention.</p>
+          <p><strong>AI setup help:</strong> Use the chat bubble on this guide for installation questions and optional-feature guidance. The assistant provides instructions; it cannot change your account, verify purchases or approve refunds. Do not share passwords, login codes, payment information or private customer records. Messages are processed through our support system; see our <a href="/privacy-policy/">Privacy Policy</a>.</p>
           <p class="guide-small">Delivery-access support is not the same as installation, migration, custom development or ongoing management. Additional work is scoped separately unless it is included in the Installed for You purchase.</p>
           <div class="guide-actions"><a href="mailto:hello@snapflowsolutions.com?subject=PDR%20Snapshot%20Support" class="btn btn--gold">Email Support</a><a href="/terms/" class="btn btn--outline" style="border-color:#fff;color:#fff">Terms</a><a href="/privacy-policy/" class="btn btn--outline" style="border-color:#fff;color:#fff">Privacy</a></div>
         </section>
@@ -176,5 +216,6 @@
     <div class="container"><div class="footer__inner"><div class="footer__col"><div class="footer__brand"><img class="footer__logo" src="../assets/snapflow-logo-lockup-transparent.png" width="239" height="200" alt="SnapFlow Solutions"></div><p class="footer__tagline">Operational systems and automation for owner-operated businesses.</p></div><div class="footer__col footer__contact"><p>Clinton Township, Michigan</p><p class="footer__nap"><a href="tel:+15864002943">(586) 400-2943</a></p><p class="footer__nap"><a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a></p></div><nav class="footer__col footer__links" aria-label="Footer"><a href="/pdr-automation/">PDR Snapshot</a><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/#contact">Contact</a></nav></div><div class="footer__bottom">&copy; 2026 SnapFlow Solutions &middot; Metro Detroit, Michigan</div></div>
   </footer>
   <script src="../js/main.js"></script>
+  <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6ad7979fefcd72a99d032c91"></script>
 </body>
 </html>
