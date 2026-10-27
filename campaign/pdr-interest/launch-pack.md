@@ -9,7 +9,7 @@ Form ID: 3NKTYVs9rQuil48WwLn4
 Location: PDR Snapshot Sales & Support (E2BvT6cJBdP5yn8gh7WN)
 Verified public host: https://api.leadconnectorhq.com/widget/form/3NKTYVs9rQuil48WwLn4
 The agency-generated api.flowbotx.ai form link returned an access error. Do not use it until separately repaired.
-Required: business name, email, inquiry details, interest choice. Phone optional. Details prompt asks whether they already use GHL. No SMS enrollment. Capture actual GHL field keys from the UI before using workflow conditions.
+Required: business name, email, inquiry details, interest choice. Phone optional. Details prompt asks whether they already use GHL. No SMS enrollment. Interest field: 5cKUY4oORajrxnCHz6s1 (pdr_interest). Inquiry details: w6cDZJr1sn2vfr0DMDoa (pdr_inquiry_details).
 
 ## Facebook post — draft, not posted
 After 28 years in paintless dent repair, I’ve been building something for the business side of PDR.
@@ -98,3 +98,14 @@ SnapFlow Solutions
 
 ## Initial decision checkpoint (proposed, not an industry benchmark)
 Track qualified business inquiries, existing GHL use, demo requests and willingness to pay at displayed prices. Keep snapshot versus service interest separate. Review after 3–5 qualified conversations; two owners indicating readiness at the stated price is a useful directional signal, not proof of demand. No paid ad spend approved.
+
+## Implementation status — October 27, 2026
+- Draft PR: https://github.com/flowbotxai/snapflow-solutions-website/pull/9
+- Reviewed deploy preview: https://deploy-preview-9--sunny-maamoul-0ec979.netlify.app/pdr-automation/
+- Native GHL form saved and embedded form visibly renders in the preview. Required fields and consent text verified. No form-submission success was observed: the owner-controlled QA submit remained on the form; browser console included Cloudflare Turnstile errors. Field persistence and submission receipt remain unverified. Do not interpret rendering as a passed submission test.
+- Workflow saved Draft: PDR Interest — Snapshot & GHL Services (DRAFT), ID d32a6402-ed05-4065-9e9e-3f941b71ca55, in Sales & Support. Dedicated form trigger present. Manually bound actual interest field: Snapshot exact match; Services matches GHL help OR Both. No contacts intentionally enrolled and no email tests sent.
+- Saved settings verified: re-entry OFF, multiple opportunities OFF, stop-on-response ON. Six email drafts, separate snapshot/services paths, 2-day and 3-day waits exist. All six message bodies replaced with reviewed copy; scope email wording slightly shortened. Final services subject corrected. Generated content was not accepted as proof of functional delivery.
+- One visible Email DND guard was inspected and correctly selected Email with a not-enabled condition. Remaining guards and wait durations require full acceptance verification.
+- Activation blockers: verified sender/reply-to and mailing-address/unsubscribe footer; booking/human-handoff removal logic; internal staff-review recipient; full branch/suppression/duplicate/reply tests; successful form capture. Sender fields are blank in the workflow and no unsubscribe-link/address footer was verified. Do not publish this workflow yet.
+- Production page, Facebook publishing, ads, and live email activation remain pending. Existing PR8/buyer-guide work untouched.
+- Site repository checks: 10/10 tests passed. Desktop preview and embedded form inspected; mobile acceptance remains pending.
