@@ -44,6 +44,7 @@
         <a href="#included">What is included</a>
         <a href="#install">Install the snapshot</a>
         <a href="#configure">Required configuration</a>
+        <a href="#customize">Choose optional features</a>
         <a href="#ai">AI setup</a>
         <a href="#test">Testing</a>
         <a href="#launch">Launch checklist</a>
@@ -69,13 +70,13 @@
             <li>11 coordinated Draft workflows covering intake through review, including optional after-call voice photo follow-up</li>
             <li>PDR In-Person Damage Inspection calendar and PDR intake fields</li>
             <li>PDR Damage &amp; Inspection Request form for customer, vehicle and damage-photo intake</li>
-            <li>Reusable tags, custom values and message templates</li>
+            <li>Reusable tags, business custom values and workflow message copy</li>
             <li>PDR Customer Questions - Portable and PDR System Default - Required knowledge-base assets</li>
             <li>Disabled SMS Conversation AI assistant template</li>
             <li>Disabled Voice AI receptionist framework</li>
           </ul>
           <h3>Workflow inventory</h3>
-          <p>Confirm all 11 named workflows after import. Their presence does not replace the end-to-end acceptance tests below; keep them in Draft until configuration and testing are complete.</p>
+          <p>The current prelaunch release candidate is v4, refreshed from the source master on October 27, 2026. Confirm all 11 named workflows after import. Their presence does not replace the end-to-end acceptance tests below; keep them in Draft until configuration and testing are complete.</p>
           <ol>
             <li>PDR - AI Human Handoff</li>
             <li>PDR - Damage Intake Received &amp; Inspection Booking</li>
@@ -90,6 +91,7 @@
             <li>PDR - Voice Intake &amp; Photo Follow-Up</li>
           </ol>
           <p><strong>License scope:</strong> one named PDR company per purchase. An agency may install and manage the assets for that company. Unrelated companies need a separate purchase or written license; resale, sublicensing and redistribution are outside the standard package.</p>
+          <p>Record your imported release version, destination location and setup choices together. Use the release supplied with your purchase; a similarly named older snapshot is not interchangeable.</p>
           <div class="guide-callout"><strong>Not included:</strong> an account subscription, phone number, calling or messaging usage, email service, sending domain, AI billing, advertising, custom migration or ongoing CRM management.</div>
         </section>
 
@@ -126,6 +128,33 @@
           <p>Ask the customer for at least three images: a full vehicle/context photo, a straight-on damage photo and an angled or reflection photo showing dent depth. Photos support preliminary review only and do not guarantee repairability or a final price.</p>
         </section>
 
+        <section class="guide-section" id="customize">
+          <span class="guide-label">Your shop, your process</span>
+          <h2>Choose the features your business wants.</h2>
+          <p>You do not need to use every workflow or offer online scheduling. Before activation, record your choices with the person who handles your leads. Leave unwanted workflows in Draft and unwanted AI features Off. Keep a copy of the original configuration before editing.</p>
+          <table class="guide-table">
+            <thead><tr><th>Feature choice</th><th>What to review before enabling or disabling it</th></tr></thead>
+            <tbody>
+              <tr><td>Customers book inspections themselves</td><td>Review the inspection calendar, public booking links, appointment messages and the Voice AI Appointment Booking action. For staff-arranged inspections, remove public booking offers and links, remove or disable the AI booking action, and change the AI instructions to collect a request for staff follow-up. Keep the handoff and owner notification configured. Pausing a confirmation workflow alone does not disable booking. Test both the public link and the voice agent.</td></tr>
+              <tr><td>Damage photo texts</td><td>Review the Voice AI actions and PDR - Voice Intake &amp; Photo Follow-Up, New Lead &amp; Damage Intake, Missed Call &amp; Intake Recovery, Incomplete Damage Intake Recovery, and form instructions. If you do not want photo requests, remove those requests and their reminders wherever used, update the AI instructions, and stop existing queued requests. Preserve contact capture and staff alerts. Test that no photo request is sent.</td></tr>
+              <tr><td>Missed-call text back</td><td>Review PDR - Missed Call &amp; Intake Recovery and the phone routing. Enable the form response only for a genuinely missed call with no intake already captured. If you turn it off, confirm that the shop still has a way to return missed calls.</td></tr>
+              <tr><td>Intake or estimate follow-ups</td><td>Review the applicable recovery and follow-up workflows, their trigger tags, waits and exit conditions. Return unwanted workflows to Draft and check enrolled contacts for queued messages. Confirm staff know which follow-up they must handle manually.</td></tr>
+              <tr><td>Voice or text AI</td><td>Each is optional. Keep unused agents Off or unassigned from live numbers/channels. Review any workflows that invoke them. The shop can use staff-led intake without enabling AI.</td></tr>
+              <tr><td>Review requests</td><td>Review PDR - Repair Completion &amp; Review Request, its completion trigger, review URL and suppression rules. Leave it in Draft if reviews will be requested manually. Requests must be neutral; do not select recipients based on whether you expect a positive review.</td></tr>
+            </tbody>
+          </table>
+          <h3>One intake, then only missing information.</h3>
+          <p>A missed call with no captured intake may receive the full intake form. When the voice assistant has already collected the details, it must save those details and ask only for anything missing or changed. If photo texts are enabled and the caller agrees, send a photo-only request after the call ends so the customer can reply with pictures. Do not send the same customer back through the full form.</p>
+          <h3>Changing a feature that is already live</h3>
+          <ol>
+            <li>Record the current configuration and return the affected workflows to Draft before changing them.</li>
+            <li>Review Enrollment History and pending actions for those workflows. Remove affected contacts from obsolete sequences using the supported workflow controls; do not assume a Draft switch alone has cancelled every queued message.</li>
+            <li>Update the related AI actions and instructions, public links, calendar availability, message copy and internal assignments.</li>
+            <li>Run a controlled test for the enabled path and the disabled path. Check messages, bookings, staff alerts and pending actions before resuming live traffic.</li>
+          </ol>
+          <div class="guide-callout"><strong>Need help choosing or changing a feature?</strong> Contact SnapFlow support with your feature choice and destination location. Do not share passwords or authentication codes. Ask for help if a dependency or queued action is unclear.</div>
+        </section>
+
         <section class="guide-section" id="ai">
           <span class="guide-label">Step 5</span>
           <h2>Keep AI disabled until it is personalized and tested.</h2>
@@ -151,11 +180,14 @@
             <tbody>
               <tr><td>New inquiry</td><td>Contact, fields, tags and opportunity are created correctly.</td></tr>
               <tr><td>Photo intake</td><td>Upload works on desktop and mobile and the images reach the correct contact.</td></tr>
-              <tr><td>Missed call</td><td>The approved response is sent once and respects consent and quiet-hour rules.</td></tr>
+              <tr><td>Missed call</td><td>With no intake captured, the approved form response is sent once and respects consent, DND and quiet-hour rules.</td></tr>
+              <tr><td>Completed voice intake</td><td>Details save to the correct contact. With consent, a photo-only text arrives after hangup. No full intake form or duplicate form reminder follows. Declining texts results in no photo SMS.</td></tr>
+              <tr><td>Disabled features</td><td>With self-scheduling disabled, neither the AI nor public links allow unwanted booking. With photo texts disabled, no photo request or queued reminder is sent. Staff alerts still work.</td></tr>
               <tr><td>Inspection booking</td><td>Correct calendar, availability, owner, confirmation and reminders are used.</td></tr>
               <tr><td>Estimate follow-up</td><td>Messages start and stop at the intended stages without duplicates.</td></tr>
-              <tr><td>Cancellation/no-show</td><td>Recovery messages and opportunity stages update correctly.</td></tr>
-              <tr><td>Review request</td><td>The request uses the correct review link and only sends after a completed repair.</td></tr>
+              <tr><td>Cancellation/no-show and rebooking</td><td>Recovery messages and opportunity stages update correctly. A new booking stops obsolete recovery and reminders.</td></tr>
+              <tr><td>Completed intake and closed jobs</td><td>Photo completion stops remaining intake reminders. Closed, completed or human-owned cases stop the applicable follow-up sequences.</td></tr>
+              <tr><td>Review request</td><td>One neutral request uses the correct review link after eligible completion. Manual suppression, including during a wait, prevents sending; repeated completion does not duplicate it.</td></tr>
               <tr><td>STOP/DND</td><td>Opt-out is recorded and no further automated assistance is sent.</td></tr>
               <tr><td>AI handoff</td><td>The correct user is alerted and automation does not compete with the human.</td></tr>
               <tr><td>Voice transfer</td><td>The call reaches the intended person and the post-call workflow behaves correctly.</td></tr>
