@@ -28,23 +28,25 @@ test('retired Georgia campaign URLs permanently redirect to current pages', asyn
   assert.match(redirects, /^\/ringgold\/\* \/service-area\/ 301!$/m);
 });
 
-test('local entity markup names the primary Michigan market', async () => {
+test('national service scope preserves the real Michigan business location', async () => {
   const home = await read('index.html');
   const serviceArea = await read('service-area/index.html');
 
   assert.match(home, /"@id": "https:\/\/snapflowsolutions\.com\/#business"/);
-  assert.match(home, /"name": "Macomb County"/);
-  assert.match(home, /"name": "Oakland County"/);
-  assert.match(serviceArea, /Metro Detroit/);
-  assert.match(serviceArea, /meta name="geo\.placename" content="Clinton Township"/);
+  assert.match(home, /"addressLocality": "Clinton Township"/);
+  assert.match(home, /"@type": "Country", "name": "United States"/);
+  assert.match(serviceArea, /Better systems for service businesses nationwide/);
+  assert.doesNotMatch(serviceArea, /Growth systems for Metro Detroit|across Macomb and Oakland/);
+  assert.doesNotMatch(home, /where we&rsquo;re most useful/);
 });
 
-test('commercial metadata leads with Macomb County without narrowing the physical location', async () => {
+test('national commercial pages and regional landing page have distinct positioning', async () => {
   const home = await read('index.html');
   const localSeo = await read('local-seo/index.html');
 
-  assert.match(home, /<title>Marketing Agency in Macomb County \| Snap Flow Solutions<\/title>/);
-  assert.match(home, /Macomb County marketing agency helping service businesses/);
-  assert.match(localSeo, /<title>Local SEO Services in Macomb County \| Snap Flow<\/title>/);
-  assert.match(localSeo, /Local SEO and Google Maps visibility for Macomb County service businesses/);
+  const regional = await read('metro-detroit/index.html');
+  assert.match(home, /<title>Marketing, Automation &amp; AI Nationwide \| Snap Flow Solutions<\/title>/);
+  assert.match(localSeo, /<title>Local SEO for Service Businesses Nationwide \| Snap Flow<\/title>/);
+  assert.match(regional, /Growth systems for Metro Detroit service businesses/);
+  assert.match(regional, /rel="canonical" href="https:\/\/snapflowsolutions\.com\/metro-detroit\/"/);
 });
