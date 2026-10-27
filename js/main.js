@@ -5,22 +5,19 @@
 (function () {
   'use strict';
 
-  // Keep the acquisition and existing-client destinations available in the
-  // compact service-page headers that share this script.
-  document.querySelectorAll('.site-header__nav').forEach(function (nav) {
-    if (!nav.querySelector('a[href="/free-ranking-report/"]')) {
-      var reportLink = document.createElement('a');
-      reportLink.href = '/free-ranking-report/';
-      reportLink.textContent = 'Free Ranking Report';
-      nav.appendChild(reportLink);
-    }
-    if (!nav.querySelector('a[href="/client-requests/"]')) {
-      var requestLink = document.createElement('a');
-      requestLink.href = '/client-requests/';
-      requestLink.textContent = 'Client Requests';
-      nav.appendChild(requestLink);
-    }
-  });
+  // Compact service menu: native details supports keyboard and touch.
+  var servicesMenu = document.querySelector('.site-header__services');
+  if (servicesMenu) {
+    document.addEventListener('click', function (event) {
+      if (!servicesMenu.contains(event.target)) servicesMenu.open = false;
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && servicesMenu.open) {
+        servicesMenu.open = false;
+        servicesMenu.querySelector('summary').focus();
+      }
+    });
+  }
 
   document.querySelectorAll('a[href="/free-ranking-report/"]').forEach(function (link) {
     link.addEventListener('click', function () {
@@ -67,6 +64,7 @@
   if (navToggle && siteNav) {
     var setNav = function (open) {
       siteNav.classList.toggle('is-open', open);
+      if (!open && servicesMenu) servicesMenu.open = false;
       navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     };
 
