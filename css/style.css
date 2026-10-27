@@ -148,6 +148,7 @@ ul { list-style: none; }
 }
 
 .site-header__brand {
+  flex-shrink: 0;
   font-family: var(--display);
   font-size: 1.4rem;
   font-weight: 600;
@@ -1639,6 +1640,9 @@ ul { list-style: none; }
 /* -- Brand logo lockup -- */
 .site-header__logo {
   display: block;
+  flex-shrink: 0;
+  max-width: none;
+  object-fit: contain;
   height: 74px;
   width: auto;
   border-radius: 10px;
