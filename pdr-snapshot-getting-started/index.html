@@ -9,7 +9,7 @@
   <meta name="description" content="Installation, configuration and launch instructions for the SnapFlow PDR Lead-to-Job Snapshot.">
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://snapflowsolutions.com/pdr-snapshot-getting-started/">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=20261027-nationwide">
   <link rel="icon" href="../assets/snapflow-mark-square.png">
   <style>
     .guide-hero{padding:70px 0 62px;background:linear-gradient(135deg,#0d1b2b 0%,#142f49 64%,#143b49 100%);color:#fff}.guide-hero__inner{max-width:900px}.guide-kicker{display:inline-flex;align-items:center;gap:10px;margin-bottom:20px;color:#e7c36a;font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.guide-kicker:before{content:"";width:34px;height:2px;background:#e7c36a}.guide-hero h1{margin:0 0 22px;color:#fff;font-size:clamp(40px,6vw,68px);line-height:1;letter-spacing:-.045em}.guide-hero p{max-width:790px;margin:0;font-size:21px;line-height:1.65;color:#d9e5ee}.guide-alert{padding:22px 0;background:#d6ad4d;color:#10263b}.guide-alert strong{display:block;margin-bottom:4px;font-size:18px}.guide-alert p{margin:0;font-size:16px;line-height:1.55}.guide-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:54px;padding:72px 0 90px}.guide-nav{position:sticky;top:110px;align-self:start;padding:24px;border:1px solid #dedbd2;border-radius:18px;background:#fff;box-shadow:0 10px 30px rgba(17,38,59,.07)}.guide-nav strong{display:block;margin-bottom:14px;color:#10263b}.guide-nav a{display:block;padding:9px 0;border-bottom:1px solid #ebe8df;color:#365065;font-size:15px;font-weight:700;text-decoration:none}.guide-nav a:last-child{border-bottom:0}.guide-main{min-width:0}.guide-section{scroll-margin-top:110px;margin-bottom:64px}.guide-label{display:block;margin-bottom:10px;color:#9b6e12;font-size:14px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.guide-section h2{margin:0 0 17px;color:#10263b;font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.025em}.guide-section h3{margin:30px 0 12px;color:#19384f;font-size:23px}.guide-section p,.guide-section li{color:#53616d;font-size:17px;line-height:1.7}.guide-section ul,.guide-section ol{display:grid;gap:10px;margin:18px 0 0;padding-left:24px}.guide-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:24px}.guide-card{padding:28px;border:1px solid #dedbd2;border-radius:18px;background:#fff}.guide-card--accent{border-color:#b88822;background:#fffaf0}.guide-card h3{margin:0 0 10px}.guide-price{margin-bottom:14px;color:#9b6e12;font-size:18px;font-weight:900}.guide-checklist{list-style:none;padding:0!important}.guide-checklist li{position:relative;padding:14px 16px 14px 44px;border:1px solid #e3dfd5;border-radius:12px;background:#fff}.guide-checklist li:before{content:"□";position:absolute;left:16px;top:13px;color:#9b6e12;font-size:21px;font-weight:900}.guide-callout{margin-top:24px;padding:22px 24px;border-left:5px solid #b88822;border-radius:0 12px 12px 0;background:#f4f0e6}.guide-callout strong{color:#10263b}.guide-table{width:100%;margin-top:22px;border-collapse:collapse;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(17,38,59,.06)}.guide-table th,.guide-table td{padding:15px 17px;border-bottom:1px solid #e6e2d9;text-align:left;vertical-align:top}.guide-table th{background:#10263b;color:#fff;font-size:15px}.guide-table td{color:#53616d;font-size:16px;line-height:1.5}.guide-support{padding:34px;border-radius:22px;background:#10263b;color:#fff}.guide-support h2{color:#fff}.guide-support p{color:#d3e0e9}.guide-support a:not(.btn){color:#e7c36a}.guide-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:22px}.guide-small{font-size:14px!important;color:#70808d!important}@media(max-width:860px){.guide-layout{grid-template-columns:1fr}.guide-nav{position:static}.guide-cards{grid-template-columns:1fr}}@media(max-width:620px){.guide-hero{padding:48px 0}.guide-layout{padding:50px 0}.guide-table{display:block;overflow-x:auto}.guide-actions .btn{width:100%;text-align:center}}
@@ -34,7 +34,7 @@
     </section>
 
     <section class="guide-alert">
-      <div class="container"><strong>Nothing should go live immediately after import.</strong><p>The workflows and AI templates are intentionally delivered in Draft or Off status. Replace the placeholders, connect your services, assign responsible users and complete a controlled test first.</p></div>
+      <div class="container"><strong>Prelaunch guide — the snapshot is in final testing and is not available to purchase or install yet.</strong><p>These instructions describe the planned release. Joining the <a href="/pdr-automation/#waitlist">early access waitlist</a> does not provide installation access or commit you to a purchase.</p><strong>Nothing should go live immediately after import.</strong><p>The workflows and AI templates are intentionally delivered in Draft or Off status. Replace the placeholders, connect your services, assign responsible users and complete a controlled test first.</p></div>
     </section>
 
     <div class="container guide-layout">
@@ -44,7 +44,7 @@
         <a href="#included">What is included</a>
         <a href="#install">Install the snapshot</a>
         <a href="#configure">Required configuration</a>
-        <a href="#customize">Choose your features</a>
+        <a href="#customize">Choose optional features</a>
         <a href="#ai">AI setup</a>
         <a href="#test">Testing</a>
         <a href="#launch">Launch checklist</a>
@@ -55,31 +55,48 @@
         <section class="guide-section" id="choose">
           <span class="guide-label">Step 1</span>
           <h2>Choose the right setup path.</h2>
-          <p>Your Marketplace purchase determines who performs the initial configuration. Both options cover one PDR company and require your own eligible account and your own provider subscriptions and usage billing. Unrelated companies require separate licenses; the protected snapshot may not be redistributed or resold.</p>
+          <p>The planned Marketplace purchase option determines who performs the initial configuration. Prices below are planned one-time prices for one named PDR company; sales are not open. Both options require your own eligible account and your own provider subscriptions and usage billing.</p>
           <h3>License scope: one named PDR company per purchase.</h3>
           <p>Your purchase grants a non-exclusive license to configure and use the included snapshot assets for one named PDR company. An agency may install and manage the system on that company's behalf. Agency installation eligibility does not grant a license for every agency client. Each unrelated company requires a separate purchase or a separate written license from SnapFlow Solutions.</p>
           <p>You may customize the assets for the licensed company's operations. You may not resell, sublicense, give away or redistribute the snapshot or its included assets as a standalone product, template bundle or agency offering. Installation and provider usage remain subject to the purchased plan's scope.</p>
           <p>Keep the purchase receipt, licensed company name and agreed destination location together. Contact support before moving the installation to another company or extending the license.</p>
           <div class="guide-callout"><strong>Platform protection is not a one-company lock.</strong> HighLevel Assets Protection restricts external redistribution to another agency but permits reuse within the receiving agency. That technical capability does not expand this purchase's license scope.</div>
           <div class="guide-cards">
-            <article class="guide-card guide-card--accent"><h3>Self Install</h3><div class="guide-price">$297 one time</div><p>You install and configure the snapshot using this guide. You are responsible for the destination account, integrations, personalization, compliance review, testing and activation.</p></article>
-            <article class="guide-card"><h3>Installed for You</h3><div class="guide-price">$699 one time</div><p>SnapFlow Solutions configures the included system after receiving your completed intake information and authorized account access. Custom development, migration and ongoing management are outside the standard installation scope.</p></article>
+            <article class="guide-card guide-card--accent"><h3>Self Install</h3><div class="guide-price">$297 planned one time</div><p>You install and configure the snapshot using this guide. You are responsible for the destination account, integrations, personalization, compliance review, testing and activation.</p></article>
+            <article class="guide-card"><h3>Installed for You</h3><div class="guide-price">$699 planned one time</div><p>SnapFlow Solutions configures the included system after receiving your completed intake information and authorized account access. Custom development, migration and ongoing management are outside the standard installation scope.</p></article>
           </div>
         </section>
 
         <section class="guide-section" id="included">
           <span class="guide-label">Step 2</span>
-          <h2>Understand what was delivered.</h2>
+          <h2>Understand the planned release assets.</h2>
           <ul>
             <li>Ten-stage PDR lead-to-job opportunity pipeline</li>
-            <li>Coordinated Draft workflows covering intake through review, with an optional voice photo follow-up path</li>
-            <li>Damage-inspection calendar and PDR intake fields</li>
-            <li>Customer and damage-photo intake form</li>
-            <li>Reusable tags, custom values and message templates</li>
-            <li>Portable PDR customer knowledge-base content</li>
+            <li>11 coordinated Draft workflows covering intake through review, including optional after-call voice photo follow-up</li>
+            <li>PDR In-Person Damage Inspection calendar and PDR intake fields</li>
+            <li>PDR Damage &amp; Inspection Request form for customer, vehicle and damage-photo intake</li>
+            <li>Reusable tags, business custom values and workflow message copy</li>
+            <li>PDR Customer Questions - Portable and PDR System Default - Required knowledge-base assets</li>
             <li>Disabled SMS Conversation AI assistant template</li>
             <li>Disabled Voice AI receptionist framework</li>
           </ul>
+          <h3>Workflow inventory</h3>
+          <p>The current prelaunch release candidate is v4, refreshed from the source master on October 27, 2026. Confirm all 11 named workflows after import. Their presence does not replace the end-to-end acceptance tests below; keep them in Draft until configuration and testing are complete.</p>
+          <ol>
+            <li>PDR - AI Human Handoff</li>
+            <li>PDR - Damage Intake Received &amp; Inspection Booking</li>
+            <li>PDR - Incomplete Damage Intake Recovery</li>
+            <li>PDR - Inspection Cancellation &amp; No-Show Recovery</li>
+            <li>PDR - Inspection Confirmation &amp; Reminders</li>
+            <li>PDR - Missed Call &amp; Intake Recovery</li>
+            <li>PDR - New Lead &amp; Damage Intake</li>
+            <li>PDR - Post-Inspection Decision Follow-Up</li>
+            <li>PDR - Repair Completion &amp; Review Request</li>
+            <li>PDR - Voice AI Transcript Review</li>
+            <li>PDR - Voice Intake &amp; Photo Follow-Up</li>
+          </ol>
+          <p><strong>License scope:</strong> one named PDR company per purchase. An agency may install and manage the assets for that company. Unrelated companies need a separate purchase or written license; resale, sublicensing and redistribution are outside the standard package.</p>
+          <p>Record your imported release version, destination location and setup choices together. Use the release supplied with your purchase; a similarly named older snapshot is not interchangeable.</p>
           <div class="guide-callout"><strong>Not included:</strong> an account subscription, phone number, calling or messaging usage, email service, sending domain, AI billing, advertising, custom migration or ongoing CRM management.</div>
         </section>
 
@@ -90,7 +107,7 @@
             <li>Before purchasing, confirm that an agency administrator can install the snapshot into the intended location. Sub-account access alone does not provide installation permission.</li>
             <li>After purchase, retain your receipt and plan name. Sign in to the purchasing agency account and use the purchased snapshot in your HighLevel dashboard to push it to the agreed location.</li>
             <li>Choose a clean location for the business. Reuse an appropriate existing empty location, or create a new one only if needed. Review overlaps before importing into an active location.</li>
-            <li>Confirm the delivery release with SnapFlow support before importing. The current internal QA candidate is PDR Lead-to-Job RC 2026-10-08 v3, refreshed October 20, 2026, with 11 workflows, 21 tags and 113 total assets. It remains subject to release acceptance; do not activate it based on the asset count alone.</li>
+            <li>Confirm the delivery release with SnapFlow support before importing. The current internal QA candidate is PDR Lead-to-Job - RELEASE CANDIDATE v4, refreshed October 27, 2026, with 11 workflows, 21 tags and 113 total assets. It remains subject to release acceptance; do not activate it based on the asset count alone.</li>
             <li>Install the purchased snapshot into the agreed location and record the release name and installation date.</li>
             <li>If installing into an active location, first document existing pipelines, fields, forms, calendars and workflows. Imported assets may create duplicates.</li>
             <li>After import, confirm that the pipeline, calendar, form, custom fields, tags, custom values, workflows and AI templates are present.</li>
@@ -110,11 +127,11 @@
             <li>Connect the buyer-owned phone number and confirm calling and SMS routing.</li>
             <li>Connect the buyer-owned email service and authenticated sending domain.</li>
             <li>Review A2P registration, consent language, quiet hours, DND and STOP handling.</li>
-            <li>Customize the PDR Photo Estimate Request form and embed or link it from the buyer's website.</li>
+            <li>Customize the PDR Damage &amp; Inspection Request form and embed or link it from the buyer's website. Replace the placeholder business name and the form's privacy-policy and terms links before use; do not leave REPLACE_WITH links in the public form.</li>
             <li>Review every email and SMS message for accuracy, tone and approved business information.</li>
           </ul>
           <h3>Recommended photo instructions</h3>
-          <p>Ask for up to four clear images: a wider view of the damaged panel, a close-up and two angled views. If intake was already collected by voice, request pictures by reply after the call, with permission; do not send the full form again. Photos help prepare for an inspection and do not guarantee repairability or a final price.</p>
+          <p>Ask for a few clear photos of what the customer would like repaired. A wider view, close-up and different angles are useful suggestions. If intake was already captured by voice, request photos by reply after the call, with permission; do not send the full form again. Photos help prepare for an inspection and do not guarantee repairability or a final price.</p>
         </section>
 
         <section class="guide-section" id="customize">
@@ -148,7 +165,7 @@
           <span class="guide-label">Step 5</span>
           <h2>Keep AI disabled until it is personalized and tested.</h2>
           <p>The core snapshot does not require AI. The included Conversation AI and Voice AI assets are frameworks that require additional configuration, eligible account features and buyer-funded usage.</p>
-          <div class="guide-callout"><strong>Choose from the options available in your account.</strong> Confirm current HighLevel model and voice availability, feature eligibility and usage pricing before choosing a configuration. Test real PDR scenarios for clear speech, accurate information, reliable booking and human handoff. No specific model or voice is required by the core snapshot.</div>
+          <div class="guide-callout"><strong>Model and voice selection:</strong> Choose from the options available in the buyer's HighLevel account and confirm feature eligibility and usage charges. Compare supported voices with realistic PDR scenarios, then test intake accuracy, pricing boundaries and human transfer before activation. A specific model or voice is not included or guaranteed by this snapshot.</div>
           <ul>
             <li>Confirm that the buyer's plan and billing support the desired AI features.</li>
             <li>Personalize the knowledge base with approved services, hours, service area, location, policies and escalation rules.</li>
@@ -156,7 +173,6 @@
             <li>Connect the correct phone number and verify the Voice AI transfer destination.</li>
             <li>Test pricing, repairability, insurance, legal, safety and unknown-question boundaries.</li>
             <li>Test human handoff, manual staff replies, conversation limits, summaries and STOP/DND behavior.</li>
-            <li>If using voice photo follow-up, verify that PDR Voice Photo Consent and PDR Voice Intake Status update only after the call. Review the separate photo follow-up workflow and the voice-intake exclusions in new-lead, missed-call and incomplete-intake recovery before enabling them together. Test both permission granted and permission declined, including a returning caller.</li>
             <li>Activate AI only after the buyer accepts the applicable usage charges and every critical test passes.</li>
           </ul>
         </section>
@@ -203,7 +219,7 @@
         <section class="guide-section guide-support" id="support">
           <span class="guide-label">Support</span>
           <h2>Need help with delivery or configuration?</h2>
-          <p>Email <a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a> or call/text product support at <a href="tel:+15864882843" data-track="phone_tap">(586) 488-2843</a>. Include your company name, purchase option, destination account/location and a clear description of the step that needs attention.</p>
+          <p>Email <a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a> or call/text <a href="tel:+15864882843">(586) 488-2843</a> for PDR snapshot support. Include your company name, purchase option, destination account/location and a clear description of the step that needs attention.</p>
           <p><strong>AI setup help:</strong> Use the chat bubble on this guide for installation questions and optional-feature guidance. The assistant provides instructions; it cannot change your account, verify purchases or approve refunds. Do not share passwords, login codes, payment information or private customer records. Messages are processed through our support system; see our <a href="/privacy-policy/">Privacy Policy</a>.</p>
           <p class="guide-small">Delivery-access support is not the same as installation, migration, custom development or ongoing management. Additional work is scoped separately unless it is included in the Installed for You purchase.</p>
           <div class="guide-actions"><a href="mailto:hello@snapflowsolutions.com?subject=PDR%20Snapshot%20Support" class="btn btn--gold">Email Support</a><a href="/terms/" class="btn btn--outline" style="border-color:#fff;color:#fff">Terms</a><a href="/privacy-policy/" class="btn btn--outline" style="border-color:#fff;color:#fff">Privacy</a></div>
@@ -213,7 +229,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container"><div class="footer__inner"><div class="footer__col"><div class="footer__brand"><img class="footer__logo" src="../assets/snapflow-logo-lockup-transparent.png" width="239" height="200" alt="SnapFlow Solutions"></div><p class="footer__tagline">Operational systems and automation for owner-operated businesses.</p></div><div class="footer__col footer__contact"><p>Clinton Township, Michigan</p><p class="footer__nap"><a href="tel:+15864002943">(586) 400-2943</a></p><p class="footer__nap"><a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a></p></div><nav class="footer__col footer__links" aria-label="Footer"><a href="/pdr-automation/">PDR Snapshot</a><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/#contact">Contact</a></nav></div><div class="footer__bottom">&copy; 2026 SnapFlow Solutions &middot; Metro Detroit, Michigan</div></div>
+    <div class="container"><div class="footer__inner"><div class="footer__col"><div class="footer__brand"><img class="footer__logo" src="../assets/snapflow-logo-lockup-transparent.png" width="239" height="200" alt="SnapFlow Solutions"></div><p class="footer__tagline">Operational systems and automation for owner-operated businesses.</p></div><div class="footer__col footer__contact"><p>Clinton Township, Michigan</p><p class="footer__nap">General SnapFlow inquiries: <a href="tel:+15864002943">(586) 400-2943</a></p><p class="footer__nap"><a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a></p></div><nav class="footer__col footer__links" aria-label="Footer"><a href="/pdr-automation/">PDR Snapshot</a><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/#contact">Contact</a></nav></div><div class="footer__bottom">&copy; 2026 SnapFlow Solutions &middot; Serving businesses nationwide</div></div>
   </footer>
   <script src="../js/main.js"></script>
   <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6ad7979fefcd72a99d032c91"></script>
