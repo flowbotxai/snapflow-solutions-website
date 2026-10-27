@@ -1553,6 +1553,10 @@ ul { list-style: none; }
 .contact__form ::placeholder {
   color: color-mix(in srgb, var(--muted) 65%, transparent);
 }
+/* Field layout rules must not reveal the hidden anti-spam field. */
+.contact__form .field[hidden] {
+  display: none !important;
+}
 @media (max-width: 640px) {
   .contact__form .field-row { grid-template-columns: 1fr; }
 }
@@ -2268,3 +2272,4 @@ body.audit-dialog-open { overflow: hidden; }
   }
   .audit-dialog__close { top: 10px; right: 12px; }
 }
+
