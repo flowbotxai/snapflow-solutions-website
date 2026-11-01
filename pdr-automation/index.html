@@ -71,6 +71,26 @@
     .pdr-page .footer__brand,.pdr-page .footer__actions{justify-content:center}
     .pdr-page .footer__links{align-items:center}
     .pdr-page .footer__logo{margin-left:auto;margin-right:auto}
+
+    /* PDR-only spacing and aligned card actions. */
+    .pdr-page main section[id]{scroll-margin-top:150px}
+    .pdr-page .pdr-hero h1{line-height:1.08}
+    .pdr-page .pdr-section h2{line-height:1.18}
+    .pdr-page .pdr-choice{align-items:stretch}
+    .pdr-page .pdr-choice__card,.pdr-page .pdr-price__box{display:flex;flex-direction:column;min-width:0}
+    .pdr-page .pdr-choice__card h3{line-height:1.3;margin:12px 0 20px}
+    .pdr-page .pdr-choice__card p{margin:0 0 28px;line-height:1.65}
+    .pdr-page .pdr-choice__card>.btn,.pdr-page .pdr-price__box>.btn{margin-top:auto;align-self:center;white-space:normal;line-height:1.4}
+    .pdr-page .pdr-choice__card>.btn{margin-top:auto}
+    .pdr-page .pdr-price__box ul{margin-bottom:30px}
+    .pdr-page .pdr-section__intro{margin-bottom:28px}
+    .pdr-page #feature-choices .pdr-section__head{margin-bottom:0}
+    .pdr-page #feature-choices .btn{margin-top:8px}
+    .pdr-page .pdr-final h2{font-size:clamp(32px,4vw,48px);line-height:1.2}
+    .pdr-page .pdr-final .pdr-hero__actions{gap:16px;align-items:stretch}
+    .pdr-page .pdr-final .pdr-hero__actions .btn{display:flex;align-items:center;justify-content:center;line-height:1.4;min-height:56px}
+    .pdr-page .pdr-final .pdr-note{max-width:900px;margin:28px auto 0;font-size:16px;line-height:1.65}
+    @media(max-width:640px){.pdr-page main section[id]{scroll-margin-top:100px}.pdr-page .pdr-choice__card,.pdr-page .pdr-price__box{gap:0}.pdr-page .pdr-choice__card>.btn{width:100%}.pdr-page .pdr-final .pdr-hero__actions{flex-direction:column}.pdr-page .pdr-final .pdr-note{font-size:15px}}
   </style>
 </head>
 <body class="pdr-page">
