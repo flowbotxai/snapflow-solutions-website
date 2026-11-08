@@ -28,3 +28,6 @@ Reviewed live Incidents PDR, Skyline Chimney and Home to Home Exchange homepages
 
 ## Google Ads & Local SEO category draft
 Added /google-ads-local-seo/ with independent Ads and SEO options, competitor monitoring, service landing pages, lead-to-sale tracking, ROAS and reporting cadence FAQ. Linked from homepage and website category navigation. Existing /google-ads/ and /local-seo/ pages preserved. Desktop and 390px mobile visually reviewed, FAQ toggle and local links checked. No production launch.
+
+## Customer Communication category draft
+Added /customer-communication/: independent voice, text/missed-call text back and website chat options, benefits, example scenarios, staff support, customer records and FAQs. Original approved styling retained. Navigation and homepage Learn More linked. Desktop and 390px mobile reviewed; FAQ expansion and local destinations checked. Existing production integrations untouched.

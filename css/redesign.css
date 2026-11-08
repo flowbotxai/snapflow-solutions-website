@@ -2736,3 +2736,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 .abstract-explore.sf-glow-button{flex-direction:row;width:fit-content;margin-left:auto;margin-right:auto}
 .abstract-explore.sf-glow-button .abstract-arrow{border:0;box-shadow:none;background:none;width:auto;height:auto;margin:0;font-size:19px}
 @media(prefers-reduced-motion:reduce){.sf-glow-button.sf-glow-button.sf-glow-button.sf-glow-button{transition:none}}
+
+/* Customer communication: three distinct, readable service rows. */
+.sf-communication-options{display:grid;gap:28px}
+.sf-communication-option{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding:36px;border:1px solid var(--line);border-radius:16px;background:white}
+.sf-communication-option h3{font-size:30px;margin:0 0 20px}.sf-communication-option .sf-quality-list{border-top:0}.sf-communication-option .sf-quality-list li:first-child{padding-top:0}
+.sf-communication-example{margin-top:26px;padding:20px 22px;background:#f1f6fb;border-left:2px solid #79b1e4;border-radius:0 10px 10px 0}.sf-communication-example strong{font-size:15px;color:var(--gold-deep)}.sf-communication-example p{font-size:16px;line-height:1.65;margin-top:8px}
+.sf-communication-option:nth-child(2) .sf-communication-example{background:#faf5e9;border-left-color:var(--gold)}
+@media(max-width:750px){.sf-communication-option{grid-template-columns:1fr;gap:28px;padding:24px}.sf-communication-option h3{font-size:27px}}
