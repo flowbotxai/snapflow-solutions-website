@@ -45,3 +45,7 @@
 .sf-legacy-refresh .snapflow-footer .footer-links h2,.sf-legacy-refresh .snapflow-footer .footer-contact h2{font-size:17px;text-wrap:initial}
 @media(max-width:850px){.sf-legacy-refresh .hero__inner,.sf-legacy-refresh .ranking-hero__grid{grid-template-columns:1fr}.sf-legacy-refresh .ranking-hero__copy{position:static}.sf-legacy-refresh .hero-visual{min-width:0;max-width:100%}}
 @media(max-width:600px){.sf-legacy-refresh .hero,.sf-legacy-refresh .request-hero,.sf-legacy-refresh .ranking-hero{padding:44px 0}.sf-legacy-refresh .request-choice-grid{grid-template-columns:1fr}.sf-legacy-refresh .request-choice-card{padding:26px}.sf-legacy-refresh .hero__actions .sf-glow-button{width:100%}.sf-legacy-refresh .services__grid,.sf-legacy-refresh .eng__grid{grid-template-columns:1fr}.sf-legacy-refresh .request-hero__sub{font-size:18px}.sf-legacy-refresh main.card{padding:28px;margin:36px auto}.sf-legacy-refresh .doc{padding-top:35px;padding-bottom:45px}.sf-legacy-refresh .thankyou{padding:32px 22px}.sf-legacy-refresh .article-body p,.sf-legacy-refresh .article-body li{font-size:17px}}
+
+/* Confirmation actions belong beneath the centered confirmation message. */
+.sf-legacy-refresh[data-request-success] .hero__actions{justify-content:center}
+.sf-legacy-refresh .thankyou__accent{color:var(--gold-deep)}
