@@ -2714,3 +2714,25 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 /* Marketing category */
 .sf-marketing-choice{font-weight:650!important;color:var(--gold-deep)!important;margin-top:18px;font-size:17px!important}.sf-marketing-visual{margin:0;overflow:hidden;border-radius:16px;background:var(--navy);box-shadow:0 24px 60px #002b431a}.sf-marketing-visual img{width:100%;height:auto}.sf-marketing-visual figcaption{font-size:12px;line-height:1.5;text-align:center;padding:13px 18px;color:#e2eaf1}.sf-marketing-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}.sf-marketing-option{border:1px solid #d9e4ec;border-radius:18px;padding:36px;background:linear-gradient(150deg,#f0f7fd,white 35%)}.sf-marketing-option:nth-child(2){background:linear-gradient(150deg,#f8f1e3,white 35%);border-color:var(--line)}.sf-marketing-option h3{font-size:30px;margin-bottom:18px}.sf-marketing-option>.sf-quality-list{margin:24px 0 18px}.sf-marketing-option>.sf-quality-list strong{font-size:18px}.sf-marketing-option>.sf-quality-list span{font-size:16px}.sf-marketing-measure{background:var(--surface)}.sf-marketing-journey{list-style:none;padding:0}.sf-marketing-journey li{display:flex;gap:22px;padding:0 0 28px}.sf-marketing-journey li>span{display:grid;place-items:center;flex:0 0 44px;height:44px;border-radius:50%;background:white;border:1px solid #d9dfe3;color:var(--gold-deep);font-size:14px;font-weight:700}.sf-marketing-journey h3{font-size:22px;margin-bottom:10px}.sf-marketing-journey p{font-size:17px}.sf-data-note{font-size:14px!important;border-top:1px solid var(--line);padding-top:18px}.sf-marketing-destination{padding:32px;background:#f0f6fb;border-radius:16px;border:1px solid #dce6ef}.sf-marketing-destination h3{font-size:27px;margin-bottom:18px}.sf-marketing-destination p{margin-bottom:24px}
 @media(max-width:750px){.sf-marketing-options{grid-template-columns:1fr}.sf-marketing-option{padding:26px}.sf-marketing-option h3{font-size:27px}.sf-marketing-destination{padding:25px}.sf-marketing-journey li{gap:16px}.sf-marketing-destination .btn{white-space:normal;text-align:left}}
+
+/* Matching service actions stay aligned in equal-height cards. */
+.sf-marketing-option{display:flex;flex-direction:column}
+.sf-marketing-option>.sf-option-button{margin-top:auto;align-self:center}
+.sf-marketing-option>.sf-quality-list{margin-bottom:28px}
+
+/* Shared action-button system overrides earlier concept-specific treatments. */
+.sf-glow-button.sf-glow-button.sf-glow-button.sf-glow-button{
+ display:inline-flex;align-items:center;justify-content:center;gap:12px;
+ min-height:48px;max-width:100%;padding:13px 22px;margin-bottom:0;
+ border:1px solid #79b1e4;border-radius:10px;
+ background:linear-gradient(160deg,#fff,#f1f7ff);color:var(--navy);
+ box-shadow:0 0 0 1px #dcecff,0 0 18px #4b9fe02b;
+ font:600 16px/1.4 var(--body);letter-spacing:normal;text-decoration:none;text-align:center;
+ transition:background .2s ease,box-shadow .2s ease;white-space:normal;
+}
+.sf-glow-button.sf-glow-button.sf-glow-button.sf-glow-button:hover:not(:disabled){background:#eaf4ff;color:var(--navy);border-color:#347da9;box-shadow:0 0 0 1px #c8e3ff,0 0 22px #4b9fe04d}
+.sf-glow-button.sf-glow-button.sf-glow-button.sf-glow-button:focus-visible{outline:3px solid var(--navy);outline-offset:4px}
+.sf-glow-button:disabled{cursor:default}
+.abstract-explore.sf-glow-button{flex-direction:row;width:fit-content;margin-left:auto;margin-right:auto}
+.abstract-explore.sf-glow-button .abstract-arrow{border:0;box-shadow:none;background:none;width:auto;height:auto;margin:0;font-size:19px}
+@media(prefers-reduced-motion:reduce){.sf-glow-button.sf-glow-button.sf-glow-button.sf-glow-button{transition:none}}
