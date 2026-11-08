@@ -31,3 +31,10 @@ Added /google-ads-local-seo/ with independent Ads and SEO options, competitor mo
 
 ## Customer Communication category draft
 Added /customer-communication/: independent voice, text/missed-call text back and website chat options, benefits, example scenarios, staff support, customer records and FAQs. Original approved styling retained. Navigation and homepage Learn More linked. Desktop and 390px mobile reviewed; FAQ expansion and local destinations checked. Existing production integrations untouched.
+
+
+## Customer management category — November 8
+- Added `/customer-management-admin-automation/` with software choice, customer records, lead stages, intake/follow-up, reminders, reviews, reactivation, example workflow and FAQs.
+- Connected homepage service 4 and navigation/footer links across the four category pages.
+- Desktop and 390px mobile inspected; FAQs and internal destinations checked. Preview remains noindex; production forms/tracking unchanged.
+- Next main category: Data Analysis & Reporting.
