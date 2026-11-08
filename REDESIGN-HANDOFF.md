@@ -38,3 +38,8 @@ Added /customer-communication/: independent voice, text/missed-call text back an
 - Connected homepage service 4 and navigation/footer links across the four category pages.
 - Desktop and 390px mobile inspected; FAQs and internal destinations checked. Preview remains noindex; production forms/tracking unchanged.
 - Next main category: Data Analysis & Reporting.
+
+
+## Remaining customer-facing pages — theme pass (November 8, 2026)
+
+Applied shared redesigned navigation/footer, Inter typography, cream/navy/gold styling and glow-outline links to 18 retained pages: request hub, two request forms, three confirmations, privacy/terms, both service-area pages, free ranking report, six legacy service pages and retired-content fallback. Content, existing scripts, iframe markup, form actions and success-event attributes were compared against the preceding commit and preserved. Mobile 390px overflow/image checks passed on 15 non-confirmation pages; representative desktop layouts reviewed. Confirmation pages checked statically to avoid triggering their production analytics success events. No form submissions or payments made. External iframe field styling remains provider-controlled. Local SEO consolidation, redirects and launch approval remain pending.
