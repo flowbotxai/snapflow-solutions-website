@@ -2816,8 +2816,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 @media(max-width:600px){.sf-pipeline-columns{grid-template-columns:1fr;padding:20px;gap:24px}.sf-pipeline-top{padding:20px;flex-direction:column;align-items:flex-start;gap:8px}.sf-pipeline-benefits{grid-template-columns:1fr}.sf-pipeline-board figcaption{padding:0 20px 20px}}
 
 /* Match pipeline benefits to the established light benefit cards. */
-.sf-pipeline-benefits{gap:22px;}
-.sf-pipeline-benefits>div{min-width:0;padding:30px 26px;background:#F5F4F0;border:1px solid #E3DDD2;border-radius:16px;box-shadow:0 6px 20px #002b4305;}
+.sf-pipeline-benefits{gap:22px;margin-top:56px;}
+.sf-pipeline-benefits>div{min-width:0;padding:30px 26px;background:#EAF3F9;border:1px solid #D4E3EE;border-top:3px solid var(--gold);border-radius:16px;box-shadow:0 6px 20px #002b4305;}
 .sf-pipeline-benefits h3{font-size:23px;line-height:1.25;margin-bottom:12px;letter-spacing:-.025em;}
 .sf-pipeline-benefits p{color:var(--muted);}
 @media(max-width:750px){.sf-pipeline-benefits{grid-template-columns:1fr;gap:16px;}.sf-pipeline-benefits>div{padding:24px;}.sf-pipeline-benefits h3{font-size:22px;}}
+
+.sf-pipeline-benefit-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;margin-bottom:22px;color:var(--navy);background:#ffffffa6;border-radius:12px;}
+.sf-pipeline-benefit-icon svg{width:28px;height:28px;}
