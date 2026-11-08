@@ -2763,3 +2763,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 .sf-responsive-showcase{margin:0;min-width:0;align-self:center;}
 .sf-responsive-showcase img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;border-radius:20px;box-shadow:0 16px 40px rgba(0,43,67,.10);}
 .sf-responsive-showcase figcaption{margin-top:12px;text-align:center;font-size:14px;line-height:1.5;color:#52616b;}
+
+/* Keep project actions on a shared baseline despite different copy lengths. */
+.sf-project-copy{display:flex;flex-direction:column;align-items:flex-start;}
+.sf-project-copy > .sf-text-link{margin-top:auto;}
+@media(min-width:1001px){.sf-project{display:flex;flex-direction:column;}.sf-project-copy{flex:1;}}
