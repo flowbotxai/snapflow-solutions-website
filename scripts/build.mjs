@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 const root = resolve(import.meta.dirname, '..');
 const out = resolve(root, 'dist');
 const production = process.env.CONTEXT === 'production';
-const publishable = new Set(['index.html','websites-landing-pages/index.html','google-ads-local-seo/index.html','customer-communication/index.html','customer-management-admin-automation/index.html','data-analysis-reporting/index.html']);
+const publishable = new Set(['index.html','websites-landing-pages/index.html','paid-advertising/index.html','seo-ai-search/index.html','customer-communication/index.html','customer-management-admin-automation/index.html','data-analysis-reporting/index.html']);
 await rm(out, { recursive: true, force: true });
 await mkdir(out);
 const assets = new Set(['assets','css','js','campaign']);

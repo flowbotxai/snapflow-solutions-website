@@ -30,3 +30,11 @@ Crawled-notindexed: /chattanooga/ (existing redirect), /blog/gbp-optimization/ (
 - Keep original working legacy service URLs until deliberate consolidation decisions. Review remaining Search Console exclusions and backlinks before redirecting/removing.
 - After approved production launch: verify all sitemap URLs return200and indexable canonical HTML; verify redirects and404; submit/resubmit production sitemap in Search Console and request indexing of homepage+five main categories. Do not submit deploy-preview URLs. Submission does not guarantee indexing.
 - Monitor live forms, GA4 and Search Console after launch. Keep previous production deploy for rollback.
+
+## Marketing split verification — November8
+- Added /paid-advertising/ and /seo-ai-search/, unique metadata, Service and Breadcrumb structured data.
+- Updated nav/footer and homepage marketing links; retained Client Requests.
+- Direct301 rules for old Google Ads and Local SEO routes; combined route kept as noindex routing hub.
+- Sitemap16URLs;29HTML documents audited with no errors;15 automated tests passed.
+- Desktop and390px mobile review passed for new pages.
+- No production release or Search Console sitemap submission performed. Live GHL receipt and GA4 event verification remain pending.

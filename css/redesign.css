@@ -2867,3 +2867,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 .contact-form button:disabled{opacity:.65;cursor:wait}
 #contact-form-status{font-size:16px;line-height:1.6;color:var(--navy)}
 .sf-legacy-anchor{display:block;height:0;scroll-margin-top:140px}
+
+/* AI search illustration: editable text, no simulated client endorsement. */
+.sf-ai-section{background:#f6f8fb}.sf-ai-visual{padding:clamp(24px,4vw,48px);border-radius:24px;background:radial-gradient(ellipse at top right,#236fa6 0,transparent 65%),#102c43;color:white;box-shadow:0 18px 45px #102c4320}.sf-ai-visual h3{color:white;font-size:clamp(26px,3vw,38px);line-height:1.2;margin:24px 0}.sf-ai-pill{font-size:13px;letter-spacing:.1em;color:#f0d699;font-weight:700}.sf-ai-answer{background:#fff;border:1px solid #d4b66a;border-radius:16px;padding:24px;color:#123047;box-shadow:0 0 24px #6fc4ff40}.sf-ai-answer .sf-ai-pill{color:#7d6228}.sf-ai-answer p{border-bottom:1px solid #dce6ee;padding:10px 0;margin:0;color:#123047}.sf-ai-connection{height:30px;border-left:2px solid #d4b66a;margin-left:24px}.sf-ai-visual small{display:block;margin-top:20px;font-size:14px;color:#dce6ee}.sf-ai-section .sf-foundation{align-items:center}.sf-ai-section .sf-quality-list{margin-top:24px}
