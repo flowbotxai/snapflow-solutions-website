@@ -25,3 +25,6 @@ This branch is a design preview, not launch-ready. Existing production integrati
 
 ## Website category sources
 Reviewed live Incidents PDR, Skyline Chimney and Home to Home Exchange homepages on November 8. Screenshots are actual site captures; captions describe visible features, not measured performance. Chris explicitly authorized using these projects as examples. Skyline patterns adapted: dedicated service pages, local coverage, direct inquiry paths and relevant FAQs. No Skyline business claims, customer testimonials or private analytics copied.
+
+## Google Ads & Local SEO category draft
+Added /google-ads-local-seo/ with independent Ads and SEO options, competitor monitoring, service landing pages, lead-to-sale tracking, ROAS and reporting cadence FAQ. Linked from homepage and website category navigation. Existing /google-ads/ and /local-seo/ pages preserved. Desktop and 390px mobile visually reviewed, FAQ toggle and local links checked. No production launch.
