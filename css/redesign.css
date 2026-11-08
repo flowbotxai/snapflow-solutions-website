@@ -2862,3 +2862,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 .sf-recording-wave i{display:block;flex:1;max-width:4px;height:var(--wave);background:#347da9;border-radius:3px;opacity:.7}
 .sf-recording-time{font-size:12px;font-variant-numeric:tabular-nums}
 @media(max-width:480px){.management-dashboard .comm-record-head .sf-example-contact{font-size:12px}.sf-call-recording{padding:12px}.sf-recording-track{gap:8px}.sf-recording-wave{gap:2px}}
+.contact-form .contact-consent{font-size:14px;line-height:1.6;color:var(--muted)}
+.contact-form .contact-consent a{text-decoration:underline;color:var(--navy)}
+.contact-form button:disabled{opacity:.65;cursor:wait}
+#contact-form-status{font-size:16px;line-height:1.6;color:var(--navy)}
+.sf-legacy-anchor{display:block;height:0;scroll-margin-top:140px}

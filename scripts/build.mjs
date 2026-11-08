@@ -1,0 +1,38 @@
+import { readdir, readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
+import { resolve } from 'node:path';
+const root = resolve(import.meta.dirname, '..');
+const out = resolve(root, 'dist');
+const production = process.env.CONTEXT === 'production';
+const publishable = new Set(['index.html','websites-landing-pages/index.html','google-ads-local-seo/index.html','customer-communication/index.html','customer-management-admin-automation/index.html','data-analysis-reporting/index.html']);
+await rm(out, { recursive: true, force: true });
+await mkdir(out);
+const assets = new Set(['assets','css','js','campaign']);
+for (const item of await readdir(root, { withFileTypes: true })) {
+  if (assets.has(item.name) || (!item.isDirectory() && (/\.html$/.test(item.name) || ['robots.txt','sitemap.xml','_redirects'].includes(item.name)))) {
+    await cp(resolve(root,item.name),resolve(out,item.name),{recursive:true});
+  } else if (item.isDirectory() && !item.name.startsWith('.') && !['dist','scripts','test','netlify'].includes(item.name)) {
+    // Only public page folders; never ship source docs or backend code.
+    const entries = await readdir(resolve(root,item.name));
+    if (entries.includes('index.html')) await cp(resolve(root,item.name),resolve(out,item.name),{recursive:true});
+  }
+}
+async function processPages(dir, prefix='') {
+  for (const entry of await readdir(dir,{withFileTypes:true})) {
+    const rel = prefix + entry.name;
+    const file = resolve(dir,entry.name);
+    if (entry.isDirectory()) { await processPages(file,rel+'/'); continue; }
+    if (!entry.name.endsWith('.html')) continue;
+    let html = await readFile(file,'utf8');
+    if (!production) {
+      html = html.replace(/<meta\s+name="robots"[^>]*>/gi,'');
+      html = html.replace('</head>','<meta name="robots" content="noindex,nofollow"></head>');
+    } else {
+      if (publishable.has(rel)) html = html.replace(/<meta\s+name="robots"[^>]*>/gi,'');
+      html = html.replace(/<div class="sample-notice">[\s\S]*?<\/div>/g,'');
+    }
+    await writeFile(file,html);
+  }
+}
+await processPages(out);
+if (!production) await writeFile(resolve(out,'_headers'),'/*\n  X-Robots-Tag: noindex, nofollow\n');
+console.log(`Prepared ${production ? 'production' : 'noindex preview'} output in dist.`);

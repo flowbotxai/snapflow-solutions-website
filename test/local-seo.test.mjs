@@ -45,7 +45,7 @@ test('national commercial pages and regional landing page have distinct position
   const localSeo = await read('local-seo/index.html');
 
   const regional = await read('metro-detroit/index.html');
-  assert.match(home, /<title>Marketing, Automation &amp; AI Nationwide \| Snap Flow Solutions<\/title>/);
+  assert.match(home, /<title>SnapFlow Solutions \| Marketing, Customer Communication & Automation<\/title>/);
   assert.match(localSeo, /<title>Local SEO for Service Businesses Nationwide \| Snap Flow<\/title>/);
   assert.match(regional, /Growth systems for Metro Detroit service businesses/);
   assert.match(regional, /rel="canonical" href="https:\/\/snapflowsolutions\.com\/metro-detroit\/"/);
