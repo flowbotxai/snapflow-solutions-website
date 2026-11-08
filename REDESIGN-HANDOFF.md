@@ -7,7 +7,7 @@
 - Netlify verified: production main, branch deploys disabled, PR Deploy Previews enabled and public.
 
 ## Next
-1. Build Websites & Landing Pages category page using the 10-second clarity foundation.
+1. Review Websites & Landing Pages at /websites-landing-pages/ (first complete draft added November 8).
 2. Complete the remaining four category pages and enable matching Learn More links.
 3. Preserve /google-ads/ and /local-seo/ as separate offerings under the marketing category.
 
@@ -22,3 +22,6 @@
 - Keep original main commit available for rollback. Merge only after explicit launch approval.
 
 This branch is a design preview, not launch-ready. Existing production integrations remain in main; copied homepage form is intentionally non-submitting and production analytics are not loaded.
+
+## Website category sources
+Reviewed live Incidents PDR, Skyline Chimney and Home to Home Exchange homepages on November 8. Screenshots are actual site captures; captions describe visible features, not measured performance. Chris explicitly authorized using these projects as examples. Skyline patterns adapted: dedicated service pages, local coverage, direct inquiry paths and relevant FAQs. No Skyline business claims, customer testimonials or private analytics copied.
