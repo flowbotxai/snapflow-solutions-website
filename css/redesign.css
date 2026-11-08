@@ -2768,3 +2768,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 .sf-project-copy{display:flex;flex-direction:column;align-items:flex-start;}
 .sf-project-copy > .sf-text-link{margin-top:auto;}
 @media(min-width:1001px){.sf-project{display:flex;flex-direction:column;}.sf-project-copy{flex:1;}}
+
+/* Center the website foundation introduction without changing checklist alignment. */
+.sf-website-foundation > div:first-child{text-align:center;align-self:center;}
+.sf-website-foundation > div:first-child p{margin-left:auto;margin-right:auto;}
