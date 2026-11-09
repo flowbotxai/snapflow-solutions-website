@@ -21,3 +21,12 @@ Three large PNG illustrations converted to lossless WebP with decoded RGBA pixel
 - This audit does not establish rankings, conversion attribution, or completed calls.
 - Real-device mobile performance and field Core Web Vitals remain unverified.
 - Newsletter remains disabled. No changes to PDR support, workflows, campaigns, or contact settings.
+
+## Deployment verification
+- PR #24 merged as f36a658da3fe074ce1296c43b4f1230714ef9b03.
+- Netlify preview status succeeded: https://deploy-preview-24--sunny-maamoul-0ec979.netlify.app/ . Preview retains noindex,nofollow.
+- Customer Communication desktop image loaded; Customer Communication and SEO & AI Search images loaded at 390 px, with document width also 390 px. Mobile navigation opened with Client Requests visible. Viewport override reset. This is Chrome viewport testing, not real-device Safari testing.
+- Production Customer Communication page loads the new WebP and has no noindex meta tag. Screenshot: qa/seo-production-desktop.png.
+- All fetched internal link/image targets returned 200; no duplicate titles or descriptions among sitemap pages.
+- Internal linking follow-up: /service-area/ and /metro-detroit/ have no incoming links in the 16 sitemap pages checked. Existing copy/design preserved; link placement not changed in this pass.
+- Fresh individual URL inspection stalled with a browser connection timeout. No claim that new service pages are now indexed.
