@@ -2904,3 +2904,5 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 .sf-search-page .sf-web-contact p.sf-section-intro{max-width:640px;margin-bottom:26px}
 .sf-search-page .btn{white-space:normal;text-align:center}
 @media(max-width:760px){.sf-search-page .sf-foundation,.sf-search-local .sf-quality-list{grid-template-columns:1fr}.sf-search-page .sf-foundation{gap:32px}.sf-search-local #options{gap:28px}.sf-search-page .sf-service-section>.container>.sf-section-intro{margin-bottom:28px}.sf-search-foundation .sf-foundation>div{padding:24px}}
+
+.sf-customer-record-visual{margin:0;min-width:0;overflow:hidden;border-radius:18px;align-self:center}.sf-customer-record-visual img{display:block;width:100%;height:auto}.management-feature>.sf-customer-record-visual{border-radius:0}
