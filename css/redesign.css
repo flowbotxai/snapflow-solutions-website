@@ -2958,3 +2958,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 .sf-newsletter-honeypot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 #newsletter-status{font-size:16px;margin:12px 0 0}#newsletter-security{margin-top:14px}
 @media(max-width:800px){.sf-newsletter{padding:44px 0}.sf-newsletter-grid{grid-template-columns:minmax(0,1fr);gap:28px}.sf-newsletter-fields{flex-direction:column}.sf-newsletter-fields input{flex:auto}.sf-newsletter-fields button{align-self:center}}
+
+/* Frame the native inquiry form in SnapFlow gold. */
+.contact-ghl{box-sizing:border-box;border:2px solid #B8892C;border-radius:16px;padding:12px;background:#fff}
+.contact-ghl .contact-form-fallback{margin:12px 8px 4px;font-size:14px;line-height:1.5}
