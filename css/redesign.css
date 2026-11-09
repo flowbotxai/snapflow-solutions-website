@@ -2906,3 +2906,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 @media(max-width:760px){.sf-search-page .sf-foundation,.sf-search-local .sf-quality-list{grid-template-columns:1fr}.sf-search-page .sf-foundation{gap:32px}.sf-search-local #options{gap:28px}.sf-search-page .sf-service-section>.container>.sf-section-intro{margin-bottom:28px}.sf-search-foundation .sf-foundation>div{padding:24px}}
 
 .sf-customer-record-visual{margin:0;min-width:0;overflow:hidden;border-radius:18px;align-self:center}.sf-customer-record-visual img{display:block;width:100%;height:auto}.management-feature>.sf-customer-record-visual{border-radius:0}
+
+/* Homepage services: image, description, then action on stacked layouts. */
+@media (max-width:900px){
+  .service-overview .website-feature>figure{grid-column:1;grid-row:1}
+  .service-overview .website-feature>.website-feature-copy{grid-column:1;grid-row:2;padding-bottom:28px}
+}
