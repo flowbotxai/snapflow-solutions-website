@@ -41,6 +41,11 @@ async function processPages(dir, prefix='') {
     if (!/thank-you|404|getting-started|pdr-|newsletter-.*preview/.test(rel)) {
       html = html.replace('</body>', '<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6af20647f85761a3b63d86a6" defer></script><script src="/js/chat-greeting.js?v=20261109-2" defer></script></body>');
     }
+    // OTTO is limited to indexable general-service production pages.
+    // Keep previews, forms, confirmations and the separate PDR product untouched.
+    if (production && !/thank-you|404|getting-started|pdr-|newsletter-.*preview|client-|project-request|campaign\//.test(rel) && !/<meta\s+name="robots"[^>]*noindex/i.test(html)) {
+      html = html.replace('</head>', '<script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="4b073fac-30d3-4bc5-91d9-d745096dfd8a" src="https://dashboard.searchatlas.com/scripts/dynamic_optimization.js"></script></head>');
+    }
     await writeFile(file,html);
   }
 }

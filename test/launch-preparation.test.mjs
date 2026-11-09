@@ -7,12 +7,18 @@ const read = path => readFile(new URL('../'+path,import.meta.url),'utf8');
 test('preview and production builds separate indexing without losing private-page exclusions',async()=>{
   execFileSync(process.execPath,['scripts/build.mjs'],{env:{...process.env,CONTEXT:'deploy-preview'}});
   assert.match(await read('dist/_headers'),/noindex/);
+  assert.doesNotMatch(await read('dist/index.html'),/sa-dynamic-optimization/);
   assert.match(await read('dist/index.html'),/name="robots" content="noindex,nofollow"/);
   await assert.rejects(access(new URL('../dist/CLAUDE.md',import.meta.url)));
   execFileSync(process.execPath,['scripts/build.mjs'],{env:{...process.env,CONTEXT:'production'}});
   const home=await read('dist/index.html');
   assert.doesNotMatch(home,/<meta\s+name="robots"[^>]*noindex/);
   assert.doesNotMatch(home,/<div class="sample-notice">/);
+  assert.equal((home.match(/id="sa-dynamic-optimization"/g)||[]).length,1);
+  assert.match(home,/data-uuid="4b073fac-30d3-4bc5-91d9-d745096dfd8a"/);
+  for (const page of ['project-request/index.html','client-work-request/index.html','pdr-snapshot-getting-started/index.html','thank-you.html']) {
+    assert.doesNotMatch(await read('dist/'+page),/sa-dynamic-optimization/);
+  }
   assert.match(await read('dist/project-request/thank-you/index.html'),/noindex/);
   assert.match(await read('dist/pdr-snapshot-getting-started/index.html'),/noindex/);
   await access(new URL('../dist/404.html',import.meta.url));
