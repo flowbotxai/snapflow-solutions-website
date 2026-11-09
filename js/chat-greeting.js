@@ -1,12 +1,10 @@
-/* A small fallback greeting for browsers where GHL suppresses its native prompt.
+/* Website-owned greeting; GHL's native prompt is disabled to avoid two renderers.
  * Uses GHL's public API or the rendered launcher; never sends a message.
  */
 (() => {
   if (document.getElementById('sf-chat-greeting')) return;
-  const key = 'sf-chat-greeting-dismissed';
+  // Dismiss only this page view. A refresh must not inherit an old Safari tab's dismissal.
   let dismissed = false;
-  try { dismissed = sessionStorage.getItem(key) === '1'; } catch {}
-  if (dismissed) return;
   const style = document.createElement('style');
   style.textContent = `
     #sf-chat-greeting{position:fixed;right:20px;bottom:90px;z-index:999999;display:flex;align-items:center;width:300px;max-width:calc(100vw - 32px);background:#fff;border:1px solid #b8892c;border-radius:14px;box-shadow:0 6px 24px #102b3f26;color:#102b3f;font:14px/1.4 Inter,system-ui,sans-serif}
@@ -30,7 +28,6 @@
   const dismiss = () => {
     dismissed = true;
     card.hidden = true;
-    try { sessionStorage.setItem(key,'1'); } catch {}
   };
   card.querySelector('.sf-chat-dismiss').addEventListener('click',dismiss);
   card.querySelector('.sf-chat-invite').addEventListener('click',() => {
@@ -55,12 +52,9 @@
       dismiss(); clearInterval(timer); return;
     }
     if (Date.now()-started < 15000) return;
-    // Avoid competing with a native greeting, where GHL already renders one.
-    const nativePrompt = widget.shadowRoot?.querySelector('button[aria-label="Close prompt"]');
-    if (nativePrompt && nativePrompt.getClientRects().length) { clearInterval(timer); return; }
     card.hidden = false;
   }, 500);
-  // Opening the existing launcher also retires this invitation for this tab session.
+  // Opening the existing launcher retires this invitation for this page view.
   const observer = new MutationObserver(() => {
     const widget = document.querySelector('chat-widget');
     if (widget?.getAttribute('data-active') === 'true') { dismiss(); observer.disconnect(); clearInterval(timer); }
