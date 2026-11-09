@@ -1,0 +1,20 @@
+[
+  {
+    "image": "customer-communication-receptionist",
+    "before": 1916947,
+    "after": 1297468,
+    "pixels_identical": true
+  },
+  {
+    "image": "local-search-map-pack",
+    "before": 1931598,
+    "after": 1383206,
+    "pixels_identical": true
+  },
+  {
+    "image": "reporting-monitor-gold",
+    "before": 1715699,
+    "after": 1082622,
+    "pixels_identical": true
+  }
+]
