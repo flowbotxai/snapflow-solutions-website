@@ -31,6 +31,11 @@ async function processPages(dir, prefix='') {
       if (publishable.has(rel)) html = html.replace(/<meta\s+name="robots"[^>]*>/gi,'');
       html = html.replace(/<div class="sample-notice">[\s\S]*?<\/div>/g,'');
     }
+    // Newsletter remains reviewable in previews; enable only after live delivery is verified.
+    if (production && process.env.NEWSLETTER_ENABLED !== 'true' && rel === 'index.html') {
+      html = html.replace(/<section class="sf-newsletter"[\s\S]*?<\/section>/, '');
+      html = html.replace(/<script src="\/js\/newsletter\.js[^"]*"><\/script>/, '');
+    }
     await writeFile(file,html);
   }
 }
