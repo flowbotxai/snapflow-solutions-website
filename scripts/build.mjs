@@ -39,7 +39,7 @@ async function processPages(dir, prefix='') {
     // Add the same native GHL assistant to public pages, excluding confirmations,
     // setup guides and draft email previews. Analytics remains production-host gated.
     if (!/thank-you|404|getting-started|pdr-|newsletter-.*preview/.test(rel)) {
-      html = html.replace('</body>', '<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6af20647f85761a3b63d86a6" defer></script><script src="/js/chat-greeting.js" defer></script></body>');
+      html = html.replace('</body>', '<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6af20647f85761a3b63d86a6" defer></script><script src="/js/chat-greeting.js?v=20261109-2" defer></script></body>');
     }
     await writeFile(file,html);
   }
