@@ -1,5 +1,5 @@
 /* A small fallback greeting for browsers where GHL suppresses its native prompt.
- * Uses GHL's documented openWidget/isActive API; never creates a conversation.
+ * Uses GHL's public API or the rendered launcher; never sends a message.
  */
 (() => {
   if (document.getElementById('sf-chat-greeting')) return;
@@ -38,6 +38,9 @@
     if (typeof api?.openWidget === 'function') {
       api.openWidget();
       dismiss();
+    } else {
+      const launcher = document.querySelector('chat-widget')?.shadowRoot?.querySelector('#lc_text-widget--btn');
+      if (launcher) { launcher.click(); dismiss(); }
     }
   });
   const started = Date.now();
@@ -46,8 +49,9 @@
     const api = window.leadConnector?.chatWidget;
     const widget = document.querySelector('chat-widget');
     if (dismissed || Date.now()-started > 120000) { clearInterval(timer); return; }
-    if (!widget || typeof api?.openWidget !== 'function') return;
-    if (widget.getAttribute('data-active') === 'true' || (typeof api.isActive === 'function' && api.isActive())) {
+    const launcher = widget?.shadowRoot?.querySelector('#lc_text-widget--btn');
+    if (!widget || (typeof api?.openWidget !== 'function' && !launcher)) return;
+    if (widget.getAttribute('data-active') === 'true' || (typeof api?.isActive === 'function' && api.isActive())) {
       dismiss(); clearInterval(timer); return;
     }
     if (Date.now()-started < 15000) return;
