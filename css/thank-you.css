@@ -1,0 +1,21 @@
+.inquiry-thanks { padding: 72px 20px 88px; background: radial-gradient(ellipse at top left, #e9eff2, transparent 65%), #f5f4f0; }
+.inquiry-thanks__card { max-width: 780px; margin: 0 auto; padding: 56px 64px; background: #fff; border: 1px solid #e3ddd2; border-top: 4px solid #b8892c; border-radius: 24px; box-shadow: 0 20px 60px #002b430c; text-align: center; }
+.inquiry-thanks__check { display: grid; place-items: center; width: 68px; height: 68px; margin: 0 auto 24px; color: #002b43; background: #f5f0e5; border: 1px solid #e0ba5c; border-radius: 50%; }
+.inquiry-thanks__eyebrow { margin: 0 0 14px; color: #7d6228; font-size: 12px; font-weight: 700; letter-spacing: .17em; }
+.inquiry-thanks h1 { margin: 0; color: #002b43; font-size: clamp(36px, 5vw, 56px); line-height: 1.08; letter-spacing: -.04em; }
+.inquiry-thanks__intro { max-width: 530px; margin: 24px auto 32px; color: #57697a; font-size: 19px; line-height: 1.7; }
+.inquiry-thanks__next { margin-bottom: 32px; padding: 26px 28px; background: #f5f4f0; border: 1px solid #e3ddd2; border-radius: 14px; text-align: left; }
+.inquiry-thanks__next h2 { margin: 0 0 10px; color: #002b43; font-size: 20px; letter-spacing: -.02em; }
+.inquiry-thanks__next p { margin: 0 0 14px; color: #57697a; font-size: 16px; line-height: 1.75; }
+.inquiry-thanks__next p:last-child { margin-bottom: 0; }
+.inquiry-thanks__next a { color: #002b43; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.inquiry-thanks__home { min-height: 48px; }
+.inquiry-thanks__signature { margin: 28px 0 0; color: #002b43; font-size: 15px; font-weight: 650; }
+.inquiry-thanks__signature span { display: block; margin-top: 4px; color: #57697a; font-size: 13px; font-weight: 400; }
+@media (max-width: 600px) {
+  .inquiry-thanks { padding: 28px 16px 40px; }
+  .inquiry-thanks__card { padding: 32px 22px; border-radius: 18px; }
+  .inquiry-thanks__intro { font-size: 17px; margin: 20px auto 24px; }
+  .inquiry-thanks__next { padding: 22px 18px; }
+  .inquiry-thanks__home { width: 100%; }
+}

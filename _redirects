@@ -1,3 +1,7 @@
+# Canonical production host only; deploy previews and branch hosts stay separate.
+https://sunny-maamoul-0ec979.netlify.app/* https://snapflowsolutions.com/:splat 301!
+http://sunny-maamoul-0ec979.netlify.app/* https://snapflowsolutions.com/:splat 301!
+
 # AI Dent Guy now operates as a PDR-specific product of Snap Flow Solutions.
 # These rules activate after aidentguy.com and www.aidentguy.com are added as
 # domain aliases to this Netlify site.
