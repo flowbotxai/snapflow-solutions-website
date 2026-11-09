@@ -19,11 +19,12 @@ test('preview and production builds separate indexing without losing private-pag
   await assert.rejects(access(new URL('../dist/_headers',import.meta.url)));
   execFileSync(process.execPath,['scripts/build.mjs'],{env:{...process.env,CONTEXT:'deploy-preview'}});
 });
-test('homepage matches required backend field names and preserves spam controls',async()=>{
+test('homepage uses the approved native GHL form without the legacy submit handler',async()=>{
   const home=await read('index.html');
-  for(const field of ['first_name','last_name','business_name','phone','email','message']) assert.match(home,new RegExp('name="'+field+'"[^>]*required'));
-  assert.match(home,/name="company_fax"/);
-  assert.match(home,/action="\/\.netlify\/functions\/contact"/);
+  assert.match(home,/src="https:\/\/links\.snapflowsolutions\.com\/widget\/form\/TOthDjgBZ3xfHwaj66U6"/);
+  assert.match(home,/title="Contact SnapFlow Solutions"/);
+  assert.match(home,/src="https:\/\/links\.snapflowsolutions\.com\/js\/form_embed\.js"/);
+  assert.doesNotMatch(home,/business-contact-form|src="\/js\/home-contact\.js"|action="\/\.netlify\/functions\/contact"/);
 });
 test('analytics loads only on production domain and keeps preview clicks silent',async()=>{
  const code=await read('js/analytics.js');
