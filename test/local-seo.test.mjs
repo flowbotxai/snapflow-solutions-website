@@ -22,7 +22,7 @@ test('retired Georgia campaign URLs permanently redirect to current pages', asyn
   const redirects = await read('_redirects');
 
   assert.match(redirects, /^\/ai-lead-capture\/\* \/operations-automation\/ 301!$/m);
-  assert.match(redirects, /^\/ai-search-visibility\/\* \/local-seo\/ 301!$/m);
+  assert.match(redirects, /^\/ai-search-visibility\/\* \/seo-ai-search\/ 301!$/m);
   assert.match(redirects, /^\/about\/\* \/ 301!$/m);
   assert.match(redirects, /^\/chattanooga\/\* \/service-area\/ 301!$/m);
   assert.match(redirects, /^\/ringgold\/\* \/service-area\/ 301!$/m);
@@ -45,7 +45,7 @@ test('national commercial pages and regional landing page have distinct position
   const localSeo = await read('local-seo/index.html');
 
   const regional = await read('metro-detroit/index.html');
-  assert.match(home, /<title>Marketing, Automation &amp; AI Nationwide \| Snap Flow Solutions<\/title>/);
+  assert.match(home, /<title>SnapFlow Solutions \| Marketing, Customer Communication & Automation<\/title>/);
   assert.match(localSeo, /<title>Local SEO for Service Businesses Nationwide \| Snap Flow<\/title>/);
   assert.match(regional, /Growth systems for Metro Detroit service businesses/);
   assert.match(regional, /rel="canonical" href="https:\/\/snapflowsolutions\.com\/metro-detroit\/"/);

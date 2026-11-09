@@ -1,3 +1,5 @@
+> November 8, 2026 redesign override: Work on `redesign/approved-homepage`, never push to main or deploy production without Chris’s launch approval. Netlify production branch is main; pull requests create public previews. The approved homepage uses css/redesign.css and assets/redesign/ to keep legacy page styling intact. Current approved audience: owner-operators and growing teams, nationwide. Six categories: Websites & Landing Pages; Paid Advertising; SEO & AI Search Visibility; Customer Communication; Customer Management & Admin Automation; Data Analysis & Reporting. New approved design uses Inter, cream, navy, gold and blue accents. These instructions supersede conflicting older branding, architecture and deployment notes below. Homepage is preview-only: noindex and non-submitting contact form must be addressed before launch. Preserve existing URLs, backend and tracking configuration.
+
 # CLAUDE.md — Snap Flow Solutions Project Context
 
 > **Read this file at the start of every session.** It is the single source of truth for project context, architecture, and rules.

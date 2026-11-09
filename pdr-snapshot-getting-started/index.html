@@ -1,35 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YQFQY5E471"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-YQFQY5E471');</script>
+<script src="/js/analytics.js?v=20261108-launch"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>PDR Snapshot Getting Started Guide | SnapFlow Solutions</title>
   <meta name="description" content="Installation, configuration and launch instructions for the SnapFlow PDR Lead-to-Job Snapshot.">
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://snapflowsolutions.com/pdr-snapshot-getting-started/">
-  <link rel="stylesheet" href="https://snapflowsolutions.com/css/style.css?v=20261027-nationwide">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/redesign.css?v=20261109-sitewide-mobile">
   <link rel="icon" href="https://snapflowsolutions.com/assets/snapflow-mark-square.png">
   <style>
     .guide-hero{padding:70px 0 62px;background:linear-gradient(135deg,#0d1b2b 0%,#142f49 64%,#143b49 100%);color:#fff}.guide-hero__inner{max-width:900px}.guide-kicker{display:inline-flex;align-items:center;gap:10px;margin-bottom:20px;color:#e7c36a;font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.guide-kicker:before{content:"";width:34px;height:2px;background:#e7c36a}.guide-hero h1{margin:0 0 22px;color:#fff;font-size:clamp(40px,6vw,68px);line-height:1;letter-spacing:-.045em}.guide-hero p{max-width:790px;margin:0;font-size:21px;line-height:1.65;color:#d9e5ee}.guide-alert{padding:22px 0;background:#d6ad4d;color:#10263b}.guide-alert strong{display:block;margin-bottom:4px;font-size:18px}.guide-alert p{margin:0;font-size:16px;line-height:1.55}.guide-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:54px;padding:72px 0 90px}.guide-nav{position:sticky;top:110px;align-self:start;padding:24px;border:1px solid #dedbd2;border-radius:18px;background:#fff;box-shadow:0 10px 30px rgba(17,38,59,.07)}.guide-nav strong{display:block;margin-bottom:14px;color:#10263b}.guide-nav a{display:block;padding:9px 0;border-bottom:1px solid #ebe8df;color:#365065;font-size:15px;font-weight:700;text-decoration:none}.guide-nav a:last-child{border-bottom:0}.guide-main{min-width:0}.guide-section{scroll-margin-top:110px;margin-bottom:64px}.guide-label{display:block;margin-bottom:10px;color:#9b6e12;font-size:14px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.guide-section h2{margin:0 0 17px;color:#10263b;font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.025em}.guide-section h3{margin:30px 0 12px;color:#19384f;font-size:23px}.guide-section p,.guide-section li{color:#53616d;font-size:17px;line-height:1.7}.guide-section ul,.guide-section ol{display:grid;gap:10px;margin:18px 0 0;padding-left:24px}.guide-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:24px}.guide-card{padding:28px;border:1px solid #dedbd2;border-radius:18px;background:#fff}.guide-card--accent{border-color:#b88822;background:#fffaf0}.guide-card h3{margin:0 0 10px}.guide-price{margin-bottom:14px;color:#9b6e12;font-size:18px;font-weight:900}.guide-checklist{list-style:none;padding:0!important}.guide-checklist li{position:relative;padding:14px 16px 14px 44px;border:1px solid #e3dfd5;border-radius:12px;background:#fff}.guide-checklist li:before{content:"□";position:absolute;left:16px;top:13px;color:#9b6e12;font-size:21px;font-weight:900}.guide-callout{margin-top:24px;padding:22px 24px;border-left:5px solid #b88822;border-radius:0 12px 12px 0;background:#f4f0e6}.guide-callout strong{color:#10263b}.guide-table{width:100%;margin-top:22px;border-collapse:collapse;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(17,38,59,.06)}.guide-table th,.guide-table td{padding:15px 17px;border-bottom:1px solid #e6e2d9;text-align:left;vertical-align:top}.guide-table th{background:#10263b;color:#fff;font-size:15px}.guide-table td{color:#53616d;font-size:16px;line-height:1.5}.guide-support{padding:34px;border-radius:22px;background:#10263b;color:#fff}.guide-support h2{color:#fff}.guide-support p{color:#d3e0e9}.guide-support a:not(.btn){color:#e7c36a}.guide-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:22px}.guide-small{font-size:14px!important;color:#70808d!important}@media(max-width:860px){.guide-layout{grid-template-columns:1fr}.guide-nav{position:static}.guide-cards{grid-template-columns:1fr}}@media(max-width:620px){.guide-hero{padding:48px 0}.guide-layout{padding:50px 0}.guide-table{display:block;overflow-x:auto}.guide-actions .btn{width:100%;text-align:center}}
   </style>
-</head>
-<body>
-  <header class="site-header">
-    <div class="site-header__inner container">
-      <a href="https://snapflowsolutions.com/" class="site-header__brand"><img class="site-header__logo" src="https://snapflowsolutions.com/assets/snapflow-logo-lockup-navy.png" width="239" height="200" alt="SnapFlow Solutions"></a>
-      <nav class="site-header__nav" aria-label="Primary"><a href="/pdr-automation/">PDR Snapshot</a><a href="#install">Installation</a><a href="#launch">Launch checklist</a><a href="#support">Support</a></nav>
-      <div class="site-header__actions"><a href="#support" class="btn btn--primary btn--sm">AI Setup Help</a></div>
-    </div>
-  </header>
+<link rel="stylesheet" href="/css/pdr-redesign.css?v=20261109-mobile-header"><meta property="og:url" content="https://snapflowsolutions.com/pdr-snapshot-getting-started/"></head>
+<body class="pdr-guide-refresh">
+  <header class="site-header"><div class="container site-header__inner"><a href="/#top" class="sample-brand"><img width="1500" height="440" src="/assets/redesign/snapflow-horizontal-gold-navy.svg" alt="SnapFlow Solutions"></a><nav aria-label="Main navigation" class="sample-nav" id="main-navigation"><details class="polished-services"><summary>Services <svg width="12" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></summary><div class="polished-dropdown"><span class="nav-dropdown-label">HOW WE CAN HELP</span><a href="/websites-landing-pages/"><span class="nav-service-icon" aria-hidden="true">▣</span><span><b>Websites & Landing Pages</b><small>Present your business clearly.</small></span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="/paid-advertising/"><span class="nav-service-icon" aria-hidden="true">↗</span><span><b>Paid Advertising</b><small>Make your ad spend count.</small></span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="/seo-ai-search/"><span class="nav-service-icon" aria-hidden="true">⌕</span><span><b>SEO &amp; AI Search Visibility</b><small>Get found in search and Maps.</small></span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="/customer-communication/"><span class="nav-service-icon" aria-hidden="true">◌</span><span><b>Customer Communication</b><small>Answer inquiries and capture details.</small></span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="/customer-management-admin-automation/"><span class="nav-service-icon" aria-hidden="true">☷</span><span><b>Customer Management & Admin</b><small>Keep records and follow-ups organized.</small></span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="/data-analysis-reporting/"><span class="nav-service-icon" aria-hidden="true">▥</span><span><b>Data Analysis & Reporting</b><small>Understand what’s working.</small></span><span class="nav-link-arrow" aria-hidden="true">↗</span></a></div></details><a href="/#how">How We Work</a><a href="/client-requests/">Client Requests</a><a href="/#contact" class="sf-glow-button header-get-started header-get-started--mobile sf-glow-button">Get Started <span aria-hidden="true">→</span></a></nav><button class="sample-menu-toggle" aria-controls="main-navigation" aria-label="Open navigation" aria-expanded="false" type="button"><span></span><span></span></button><a href="/#contact" class="sf-glow-button header-get-started sf-glow-button">Get Started <span aria-hidden="true">→</span></a></div></header>
 
   <main>
     <section class="guide-hero">
       <div class="container guide-hero__inner">
-        <span class="guide-kicker">Official buyer onboarding guide</span>
-        <h1>PDR Lead-to-Job Snapshot: Getting Started</h1>
-        <p>Use this guide to install, personalize, test and safely launch your SnapFlow PDR system. Complete every required step before publishing workflows or connecting live customer traffic.</p>
+        <span class="guide-kicker">PDR SNAPSHOT · SETUP GUIDE</span>
+        <h1>Get your PDR system<br><span>up and running.</span></h1>
+        <p>Install, personalize and test your PDR Lead-to-Job Snapshot, one step at a time. Open a section below for the instructions you need.</p>
       </div>
     </section>
 
@@ -48,13 +41,13 @@
         <a href="#ai">AI setup</a>
         <a href="#test">Testing</a>
         <a href="#launch">Launch checklist</a>
-        <a href="#support">Support</a>
+        <a href="#refunds">Purchase terms</a><a href="#support">Support</a>
       </aside>
 
       <div class="guide-main">
-        <section class="guide-section" id="choose">
-          <span class="guide-label">Step 1</span>
-          <h2>Choose the right setup path.</h2>
+        <section class="guide-section" id="choose"><details class="guide-step"><summary><span class="guide-label">Step 1</span><h2>Choose the right setup path.</h2><span class="guide-expand" aria-hidden="true">+</span></summary><div class="guide-step-content">
+
+
           <p>Choose Self Install or Installed for You. The option determines who performs the initial configuration. Prices below are one-time prices for one named PDR company. Both options require your own eligible account and your own provider subscriptions and usage billing.</p>
           <h3>License scope: one named PDR company per purchase.</h3>
           <p>Your purchase grants a non-exclusive license to configure and use the included snapshot assets for one named PDR company. An agency may install and manage the system on that company's behalf. Agency installation eligibility does not grant a license for every agency client. Each unrelated company requires a separate purchase or a separate written license from SnapFlow Solutions.</p>
@@ -65,11 +58,11 @@
             <article class="guide-card guide-card--accent"><h3>Self Install</h3><div class="guide-price">$197 one time at launch</div><p>You install, configure and test the snapshot yourself using this guide and AI assistance. Guide access continues without a 14-day limit. No human technical support, account configuration or training calls are included. You are responsible for the destination account, service connections, personalization, compliance review, testing and activation.</p></article>
             <article class="guide-card"><h3>Installed for You</h3><div class="guide-price">$699 one time at launch</div><p>SnapFlow Solutions configures and tests the agreed included system after completed intake and authorized access. Includes one completed-work walkthrough up to 45 minutes, 30 days of human email help from handoff, corrections to our configuration and one consolidated round of minor adjustments. Email response target: two business days. Installation target: five business days after prerequisites are complete, excluding provider approval delays. All builds happen behind the scenes. A2P registration/remediation, migration, custom development and ongoing management are separately quoted; provider fees and usage are separate.</p></article>
           </div>
-        </section>
+        </div></details></section>
 
-        <section class="guide-section" id="included">
-          <span class="guide-label">Step 2</span>
-          <h2>Understand the planned release assets.</h2>
+        <section class="guide-section" id="included"><details class="guide-step"><summary><span class="guide-label">Step 2</span><h2>Understand the planned release assets.</h2><span class="guide-expand" aria-hidden="true">+</span></summary><div class="guide-step-content">
+
+
           <ul>
             <li>Ten-stage PDR lead-to-job opportunity pipeline</li>
             <li>11 coordinated Draft workflows covering intake through review, including optional after-call voice photo follow-up</li>
@@ -98,11 +91,11 @@
           <p><strong>License scope:</strong> one named PDR company per purchase. An agency may install and manage the assets for that company. Unrelated companies need a separate purchase or written license; resale, sublicensing and redistribution are outside the standard package.</p>
           <p>Record your imported release version, destination location and setup choices together. Use the release supplied with your purchase; a similarly named older snapshot is not interchangeable.</p>
           <div class="guide-callout"><strong>Not included:</strong> an account subscription, phone number, calling or messaging usage, email service, sending domain, AI billing, advertising, custom migration or ongoing CRM management.</div>
-        </section>
+        </div></details></section>
 
-        <section class="guide-section" id="install">
-          <span class="guide-label">Step 3</span>
-          <h2>Follow your purchased setup path.</h2>
+        <section class="guide-section" id="install"><details class="guide-step" open><summary><span class="guide-label">Step 3</span><h2>Follow your purchased setup path.</h2><span class="guide-expand" aria-hidden="true">+</span></summary><div class="guide-step-content">
+
+
           <p><strong>Installed for You:</strong> reply to your order email with the requested business and destination-account details. Arrange authorized access through the agreed secure method; do not email passwords or authentication codes. SnapFlow performs the agreed installation and testing, then provides your handoff and completed-work walkthrough. Do not import the snapshot again. Use the remaining guide to understand your setup and agreed feature choices.</p>
           <div class="guide-callout"><strong>Inspection calendar setup:</strong> The imported inspection calendar is intentionally Inactive. Assign the responsible staff member and working hours, review availability and meeting details, then activate the calendar when you are ready to accept bookings. Calendar activation and workflow publication are separate choices; staff can use a configured calendar while automated workflows remain Draft. An inactive calendar may not appear in a booking picker.</div>
           <h3>Self Install: import into the agreed location.</h3>
@@ -117,11 +110,11 @@
             <li>After import, confirm that the pipeline, calendar, form, custom fields, tags, custom values, workflows and AI templates are present.</li>
             <li>Do not delete similarly named assets until you know which version is connected to existing forms, websites or automations.</li>
           </ol>
-        </section>
+        </div></details></section>
 
-        <section class="guide-section" id="configure">
-          <span class="guide-label">Step 4</span>
-          <h2>Replace every placeholder and connect your services.</h2>
+        <section class="guide-section" id="configure"><details class="guide-step"><summary><span class="guide-label">Step 4</span><h2>Replace every placeholder and connect your services.</h2><span class="guide-expand" aria-hidden="true">+</span></summary><div class="guide-step-content">
+
+
           <ul class="guide-checklist">
             <li>Replace the business name, main phone, website, service area and shop address.</li>
             <li>Replace the photo-upload link, booking link, Google review link, privacy-policy URL and terms URL.</li>
@@ -136,11 +129,11 @@
           </ul>
           <h3>Recommended photo instructions</h3>
           <p>Ask for a few clear photos of what the customer would like repaired. A wider view, close-up and different angles are useful suggestions. If intake was already captured by voice, request photos by reply after the call, with permission; do not send the full form again. Photos help prepare for an inspection and do not guarantee repairability or a final price.</p>
-        </section>
+        </div></details></section>
 
-        <section class="guide-section" id="customize">
-          <span class="guide-label">Your shop, your process</span>
-          <h2>Choose the features your business wants.</h2>
+        <section class="guide-section" id="customize"><details class="guide-step"><summary><span class="guide-label">Your shop, your process</span><h2>Choose the features your business wants.</h2><span class="guide-expand" aria-hidden="true">+</span></summary><div class="guide-step-content">
+
+
           <p>You do not need to use every workflow or offer online scheduling. Before activation, record your choices with the person who handles your leads. Leave unwanted workflows in Draft and unwanted AI features Off. Keep a copy of the original configuration before editing.</p>
           <table class="guide-table">
             <thead><tr><th>Feature choice</th><th>What to review before enabling or disabling it</th></tr></thead>
@@ -163,11 +156,11 @@
             <li>Run a controlled test for the enabled path and the disabled path. Check messages, bookings, staff alerts and pending actions before resuming live traffic.</li>
           </ol>
           <div class="guide-callout"><strong>Need help choosing or changing a feature?</strong> Use the AI chat for guide-based explanations. Human technical assistance is included only with Installed for You, within its 30-day scope. Do not share passwords or authentication codes. If a dependency or queued action is unclear, do not activate the affected feature.</div>
-        </section>
+        </div></details></section>
 
-        <section class="guide-section" id="ai">
-          <span class="guide-label">Step 5</span>
-          <h2>Keep AI disabled until it is personalized and tested.</h2>
+        <section class="guide-section" id="ai"><details class="guide-step"><summary><span class="guide-label">Step 5</span><h2>Keep AI disabled until it is personalized and tested.</h2><span class="guide-expand" aria-hidden="true">+</span></summary><div class="guide-step-content">
+
+
           <p>The core snapshot does not require AI. The included Conversation AI and Voice AI assets are frameworks that require additional configuration, eligible account features and buyer-funded usage.</p>
           <div class="guide-callout"><strong>Model and voice selection:</strong> Choose from the options available in the buyer's HighLevel account and confirm feature eligibility and usage charges. Compare supported voices with realistic PDR scenarios, then test intake accuracy, pricing boundaries and human transfer before activation. A specific model or voice is not included or guaranteed by this snapshot.</div>
           <ul>
@@ -179,11 +172,11 @@
             <li>Test human handoff, manual staff replies, conversation limits, summaries and STOP/DND behavior.</li>
             <li>Activate AI only after the buyer accepts the applicable usage charges and every critical test passes.</li>
           </ul>
-        </section>
+        </div></details></section>
 
-        <section class="guide-section" id="test">
-          <span class="guide-label">Step 6</span>
-          <h2>Run a controlled end-to-end test.</h2>
+        <section class="guide-section" id="test"><details class="guide-step"><summary><span class="guide-label">Step 6</span><h2>Run a controlled end-to-end test.</h2><span class="guide-expand" aria-hidden="true">+</span></summary><div class="guide-step-content">
+
+
           <p>Use a synthetic contact, an owner-controlled phone number and non-customer test images. Do not test on a real lead.</p>
           <table class="guide-table">
             <thead><tr><th>Test</th><th>Pass requirement</th></tr></thead>
@@ -203,11 +196,11 @@
               <tr><td>Voice transfer</td><td>The call reaches the intended person and the post-call workflow behaves correctly.</td></tr>
             </tbody>
           </table>
-        </section>
+        </div></details></section>
 
-        <section class="guide-section" id="launch">
-          <span class="guide-label">Step 7</span>
-          <h2>Complete the launch gate.</h2>
+        <section class="guide-section" id="launch"><details class="guide-step"><summary><span class="guide-label">Step 7</span><h2>Complete the launch gate.</h2><span class="guide-expand" aria-hidden="true">+</span></summary><div class="guide-step-content">
+
+
           <ul class="guide-checklist">
             <li>No placeholder business information remains.</li>
             <li>No prior-client or test customer data is present.</li>
@@ -218,15 +211,15 @@
             <li>A rollback plan exists: return workflows to Draft and disconnect live traffic.</li>
           </ul>
           <div class="guide-callout"><strong>Publish gradually.</strong> Activate workflows individually and monitor the first tests before enabling the next stage. Do not publish every automation simultaneously.</div>
-        </section>
+        </div></details></section>
 
-        <section class="guide-section" id="refunds">
-          <span class="guide-label">Purchase terms</span>
-          <h2>Refunds and cancellations.</h2>
+        <section class="guide-section" id="refunds"><details class="guide-step"><summary><span class="guide-label">Purchase terms</span><h2>Refunds and cancellations.</h2><span class="guide-expand" aria-hidden="true">+</span></summary><div class="guide-step-content">
+
+
           <p><strong>Self Install:</strong> No change-of-mind refund after snapshot access is delivered. Missing access, duplicate charges or defects are reviewed for correction or refund.</p>
           <p><strong>Installed for You:</strong> Full refund if cancelled before work starts. After work starts, any refund covers the unused work.</p>
           <p>Keep your purchase reference and delivery records. Send access, billing or defect reports to <a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a>. The AI assistant cannot verify a purchase or approve a refund.</p>
-        </section>
+        </div></details></section>
 
         <section class="guide-section guide-support" id="support">
           <span class="guide-label">Guide and setup assistance</span>
@@ -235,17 +228,21 @@
           <p><strong>Self Install is self-service.</strong> Ongoing guide access and AI assistance are included; human technical support, configuration and training calls are not. <strong>Human technical help is included only with Installed for You</strong>, within its 30-day support period and agreed scope. Your guide access continues after personal support ends.</p>
           <p>Installed for You buyers can email <a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a> with their company, purchase reference, location and setup step. Purchase-access, billing and defect reports can also be submitted for review; this does not include free setup or custom troubleshooting.</p>
           <p>AI chat messages are processed through our support system. Do not share passwords, authentication codes, payment information or private customer records. See our <a href="https://snapflowsolutions.com/privacy-policy/">Privacy Policy</a>.</p>
-          <div class="guide-actions"><a href="/pdr-automation/#setup-help" class="btn btn--gold">PDR Product &amp; Pricing</a><a href="https://snapflowsolutions.com/terms/" class="btn btn--outline" style="border-color:#fff;color:#fff">Terms</a></div>
+          <div class="guide-actions"><a href="/pdr-automation/#setup-help" class="sf-glow-button btn--gold">PDR Product &amp; Pricing</a><a href="https://snapflowsolutions.com/terms/" class="sf-glow-button btn--outline">Terms</a></div>
         </section>
       </div>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container"><div class="footer__inner"><div class="footer__col"><div class="footer__brand"><img class="footer__logo" src="https://snapflowsolutions.com/assets/snapflow-logo-lockup-transparent.png" width="239" height="200" alt="SnapFlow Solutions"></div><p class="footer__tagline">Operational systems and automation for owner-operated businesses.</p></div><div class="footer__col footer__contact"><p>Clinton Township, Michigan</p><p class="footer__nap">General SnapFlow inquiries: <a href="tel:+15864002943">(586) 400-2943</a></p><p class="footer__nap"><a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a></p></div><nav class="footer__col footer__links" aria-label="Footer"><a href="/pdr-automation/">PDR Snapshot</a><a href="https://snapflowsolutions.com/privacy-policy/">Privacy Policy</a><a href="https://snapflowsolutions.com/terms/">Terms</a><a href="https://snapflowsolutions.com/#contact">Contact</a></nav></div><div class="footer__bottom">&copy; 2026 SnapFlow Solutions &middot; Serving businesses nationwide</div></div>
-  </footer>
-  
-  
+  <footer class="snapflow-footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a href="/#top" aria-label="SnapFlow Solutions — back to top"><img src="/assets/redesign/snapflow-horizontal-gold-navy.svg" width="1500" height="440" alt="SnapFlow Solutions" loading="lazy"></a><p>Marketing. Customer communication.<br>Less admin. Better business decisions.</p><span>Built for owner-operators and growing teams.</span></div><nav class="footer-links" aria-label="Footer services"><h2>Our Services</h2><a href="/websites-landing-pages/">Websites &amp; Landing Pages</a><a href="/paid-advertising/">Paid Advertising</a><a href="/seo-ai-search/">SEO &amp; AI Search Visibility</a><a href="/customer-communication/">Customer Communication</a><a href="/customer-management-admin-automation/">Customer Management &amp; Automation</a><a href="/data-analysis-reporting/">Data Analysis &amp; Reporting</a></nav><nav class="footer-links" aria-label="About SnapFlow"><h2>Get to Know Us</h2><a href="/pdr-automation/">PDR Automation</a><a href="/pdr-snapshot-getting-started/">Setup Guide</a><a href="/#how">How We Work</a><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/#contact">Contact Us</a></nav><div class="footer-contact"><h2>Let’s Connect</h2><a href="tel:+15864002943">(586) 400-2943</a><a href="mailto:hello@snapflowsolutions.com">hello@snapflowsolutions.com</a><p>Clinton Township, Michigan<br>Working with businesses nationwide.</p><a class="footer-talk sf-glow-button" href="/#contact">Let’s Talk <span aria-hidden="true">→</span></a></div></div><div class="footer-bottom"><span>© 2026 SnapFlow Solutions</span><a href="/#top">Back to Top ↑</a></div></div></footer>
+
+
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6ad7979fefcd72a99d032c91"></script>
-</body>
+<script>
+const menu=document.querySelector('.sample-menu-toggle'),nav=document.querySelector('.sample-nav'),services=document.querySelector('.polished-services');
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');nav.classList.toggle('nav-open',open)});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{services.open=false;nav.classList.remove('nav-open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation')}));
+document.addEventListener('click',e=>{if(!services.contains(e.target))services.open=false});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(nav.classList.contains('nav-open'))menu.focus();services.open=false;nav.classList.remove('nav-open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation')}});
+</script><script>function openGuideStep(){const el=document.getElementById(location.hash.slice(1));const d=el?.querySelector("details");if(d){d.open=true;requestAnimationFrame(()=>el.scrollIntoView({block:"start"}));}}window.addEventListener("hashchange",openGuideStep);openGuideStep();</script></body>
 </html>

@@ -40,11 +40,29 @@ https://www.aidentguy.com/* /retired-content.html 404!
 # their signals to a relevant live page.
 /ai-lead-capture /operations-automation/ 301!
 /ai-lead-capture/* /operations-automation/ 301!
-/ai-search-visibility /local-seo/ 301!
-/ai-search-visibility/* /local-seo/ 301!
+/ai-search-visibility /seo-ai-search/ 301!
+/ai-search-visibility/* /seo-ai-search/ 301!
 /about / 301!
 /about/* / 301!
 /chattanooga /service-area/ 301!
 /chattanooga/* /service-area/ 301!
 /ringgold /service-area/ 301!
 /ringgold/* /service-area/ 301!
+
+# Relevant replacements for missing URLs confirmed in Search Console, 2026-11-08.
+/ai-consulting /ai-implementation/ 301!
+/ai-consulting/ /ai-implementation/ 301!
+/blog/ai-lead-generation /customer-communication/ 301!
+/blog/ai-lead-generation/ /customer-communication/ 301!
+/blog/missed-call-text-back /customer-communication/#options 301!
+/blog/missed-call-text-back/ /customer-communication/#options 301!
+/blog/ai-search-visibility /seo-ai-search/ 301!
+/blog/ai-search-visibility/ /seo-ai-search/ 301!
+/blog/gbp-optimization /seo-ai-search/ 301!
+/blog/gbp-optimization/ /seo-ai-search/ 301!
+
+# Marketing split: existing focused URLs retain direct permanent destinations.
+/google-ads /paid-advertising/ 301!
+/google-ads/ /paid-advertising/ 301!
+/local-seo /seo-ai-search/ 301!
+/local-seo/ /seo-ai-search/ 301!

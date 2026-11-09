@@ -1,0 +1,80 @@
+/* Shared PDR product and onboarding presentation. */
+.pdr-refresh,.pdr-guide-refresh{font-family:Inter,sans-serif;color:var(--navy);background:#fff;padding-bottom:0}
+.pdr-refresh main,.pdr-guide-refresh main{text-align:left}
+.pdr-refresh .pdr-hero,.pdr-guide-refresh .guide-hero{background:radial-gradient(ellipse at 0 0,#eaf4fb,transparent 55%),radial-gradient(ellipse at 100% 100%,#f6efd9,transparent 55%),#fff;color:var(--navy);padding:70px 0;text-align:left}
+.pdr-refresh .pdr-hero__grid{grid-template-columns:1fr 1.05fr;gap:48px}
+.pdr-refresh .pdr-hero h1,.pdr-guide-refresh .guide-hero h1{font-family:Inter,sans-serif;color:var(--navy);font-size:clamp(36px,4vw,54px);line-height:1.12;letter-spacing:-.04em;margin:0 0 24px}
+.pdr-refresh .pdr-hero h1 span,.pdr-guide-refresh .guide-hero h1 span{color:#347da9}
+.pdr-refresh .pdr-kicker,.pdr-guide-refresh .guide-kicker{color:var(--gold-deep);font-size:13px;letter-spacing:.1em;justify-content:flex-start;margin-bottom:20px}
+.pdr-refresh .pdr-kicker:before,.pdr-guide-refresh .guide-kicker:before{display:none}
+.pdr-refresh .pdr-hero__lead,.pdr-guide-refresh .guide-hero p{color:var(--muted);font-size:20px;line-height:1.7;margin:0 0 28px}
+.pdr-refresh .pdr-hero__actions{justify-content:flex-start;gap:14px}
+.pdr-refresh .pdr-hero-preview img{box-shadow:0 16px 45px #002b4318;border:1px solid #e1e6e9;border-radius:18px}
+.pdr-refresh .pdr-hero-preview figcaption{color:var(--muted)!important;font-size:13px!important;line-height:1.6}
+.pdr-refresh .pdr-strip{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pdr-refresh .pdr-strip__inner{padding:22px 0;gap:24px 65px;font-size:13px;color:var(--gold-deep)}
+.pdr-refresh .pdr-section{padding:80px 0}
+.pdr-refresh .pdr-section--soft,.pdr-refresh .pdr-section--dark{background:var(--surface);color:var(--navy)}
+.pdr-refresh .pdr-section__head{max-width:830px;margin:0 auto 36px;text-align:center}
+.pdr-refresh h2,.pdr-guide-refresh h2{font-family:Inter,sans-serif;font-size:clamp(28px,3.3vw,40px);line-height:1.2;color:var(--navy);letter-spacing:-.03em}
+.pdr-refresh .pdr-section--dark h2{color:var(--navy)}
+.pdr-refresh .pdr-label,.pdr-guide-refresh .guide-label{color:var(--gold-deep);font-size:12px;letter-spacing:.1em;font-weight:700}
+.pdr-refresh .pdr-section__intro{font-size:18px;line-height:1.7;color:var(--muted)}
+.pdr-refresh .pdr-card{box-shadow:none;border:1px solid #e1e6e9;padding:30px;border-top:2px solid #d4b670}
+.pdr-refresh .pdr-card__num{margin-bottom:18px}
+.pdr-refresh .pdr-card h3,.pdr-refresh .pdr-choice__card h3{font-size:23px;line-height:1.3}
+.pdr-refresh .pdr-card p,.pdr-refresh .pdr-choice__card p{font-size:17px;line-height:1.7}
+.pdr-refresh .pdr-includes{list-style:none;padding:0;max-width:1000px;margin:0 auto;gap:10px 32px}
+.pdr-refresh .pdr-includes li{font-weight:500;background:transparent;border-bottom:1px solid var(--line);border-radius:0;padding:16px 0;font-size:17px}
+.pdr-refresh .pdr-price__box{box-shadow:0 12px 30px #002b4308;border:1px solid #dce3e8;border-top:3px solid var(--gold);padding:36px}
+.pdr-refresh .pdr-price__box ul{list-style:none;padding:0;display:grid;gap:12px}
+.pdr-refresh .pdr-price__box li{font-size:16px}
+.pdr-refresh .pdr-price__box>.sf-glow-button{margin-top:auto;align-self:flex-start}
+.pdr-refresh .pdr-price__amount{font-size:56px;font-weight:700}
+.pdr-refresh .pdr-price__once{font-size:15px;font-weight:500;line-height:1.6}
+.pdr-refresh #planned-options .pdr-note{color:var(--muted)!important;font-size:14px;line-height:1.7}
+.pdr-refresh .pdr-choice__card{background:#fff;border-color:var(--line);padding:32px}
+.pdr-refresh .pdr-choice__card>.sf-glow-button{margin-top:auto;align-self:flex-start}
+.pdr-refresh .pdr-preview-note{font-size:15px;margin:0 0 28px;background:var(--surface);border-color:var(--gold)}
+.pdr-refresh .pdr-previews{max-width:1050px;margin:auto}
+.pdr-refresh .pdr-faq summary{font-size:18px;font-weight:600;line-height:1.5}
+.pdr-refresh .pdr-faq details p{font-size:16px;line-height:1.8}
+.pdr-refresh .pdr-final{background:linear-gradient(130deg,#edf5fb,#faf6e9);padding:70px 0}
+.pdr-refresh .pdr-final .pdr-hero__actions{justify-content:center}
+.pdr-refresh .pdr-final p{font-size:18px}
+.pdr-refresh .pdr-final .pdr-note{font-size:15px}
+.pdr-guide-refresh .guide-hero__inner{max-width:1160px}
+.pdr-guide-refresh .guide-hero p{max-width:750px;margin:0}
+.pdr-guide-refresh .guide-alert{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--navy)}
+.pdr-guide-refresh .guide-alert .container{border-left:3px solid var(--gold);padding-left:24px}
+.pdr-guide-refresh .guide-alert p{color:var(--muted);font-size:16px;line-height:1.7}
+.pdr-guide-refresh .guide-layout{gap:40px;padding:60px 0 80px;grid-template-columns:245px minmax(0,1fr)}
+.pdr-guide-refresh .guide-nav{box-shadow:none;background:var(--surface);border-color:var(--line);padding:22px}
+.pdr-guide-refresh .guide-nav a{font-size:14px;font-weight:500;line-height:1.5;padding:11px 0}
+.pdr-guide-refresh .guide-section{margin-bottom:18px;scroll-margin-top:125px}
+.pdr-guide-refresh .guide-step{border:1px solid #dce3e8;border-radius:16px;background:#fff;overflow:hidden}
+.pdr-guide-refresh .guide-step>summary{position:relative;list-style:none;cursor:pointer;padding:25px 56px 25px 26px}
+.pdr-guide-refresh .guide-step>summary::-webkit-details-marker{display:none}
+.pdr-guide-refresh .guide-step>summary h2{font-size:23px;line-height:1.35;margin:0;letter-spacing:-.02em}
+.pdr-guide-refresh .guide-step>summary .guide-label{margin-bottom:8px}
+.pdr-guide-refresh .guide-expand{position:absolute;right:26px;top:38px;font-size:24px;color:var(--gold-deep)}
+.pdr-guide-refresh .guide-step[open]>summary{background:var(--surface);border-bottom:1px solid var(--line)}
+.pdr-guide-refresh .guide-step[open] .guide-expand{transform:rotate(45deg)}
+.pdr-guide-refresh .guide-step-content{padding:10px 26px 28px}
+.pdr-guide-refresh .guide-step-content p,.pdr-guide-refresh .guide-step-content li{font-size:16px;line-height:1.8}
+.pdr-guide-refresh .guide-section h3{font-size:21px;line-height:1.4}
+.pdr-guide-refresh .guide-cards{grid-template-columns:1fr}
+.pdr-guide-refresh .guide-card{padding:24px;background:var(--surface);border-color:var(--line)}
+.pdr-guide-refresh .guide-callout{background:#f2f7fb;border-left:3px solid #347da9;font-size:16px;line-height:1.8}
+.pdr-guide-refresh .guide-table{box-shadow:none}
+.pdr-guide-refresh .guide-table td{font-size:15px;line-height:1.7}
+.pdr-guide-refresh .guide-support{background:#edf5fb;border:1px solid #d5e4ef;margin-top:35px;color:var(--navy)}
+.pdr-guide-refresh .guide-support h2{color:var(--navy);font-size:30px}
+.pdr-guide-refresh .guide-support p{color:var(--muted);font-size:16px}
+.pdr-guide-refresh .guide-support a:not(.sf-glow-button){color:var(--gold-deep)}
+.pdr-refresh .sf-glow-button,.pdr-guide-refresh .sf-glow-button{white-space:normal;text-align:center;line-height:1.45;min-height:48px}
+@media(max-width:900px){.pdr-refresh .pdr-hero__grid{grid-template-columns:1fr}.pdr-refresh .pdr-hero-preview{max-width:720px}.pdr-guide-refresh .guide-layout{grid-template-columns:1fr}.pdr-guide-refresh .guide-nav{position:static}.pdr-guide-refresh .guide-nav a{display:inline-block;border:0;margin-right:20px}.pdr-refresh .pdr-choice{grid-template-columns:1fr}}
+@media(max-width:600px){.pdr-refresh .pdr-hero,.pdr-guide-refresh .guide-hero{padding:44px 0}.pdr-refresh .pdr-section{padding:50px 0}.pdr-refresh .pdr-hero__lead,.pdr-guide-refresh .guide-hero p{font-size:18px}.pdr-refresh .pdr-hero__actions{flex-direction:column}.pdr-refresh .pdr-strip__inner{padding:20px 24px}.pdr-refresh .pdr-price__box{padding:28px 22px}.pdr-guide-refresh .guide-layout{padding:35px 0 55px}.pdr-guide-refresh .guide-step>summary{padding:22px 45px 22px 20px}.pdr-guide-refresh .guide-step>summary h2{font-size:21px}.pdr-guide-refresh .guide-step-content{padding:8px 20px 24px}.pdr-guide-refresh .guide-expand{right:18px}.pdr-guide-refresh .guide-support{padding:26px 22px}.pdr-refresh .pdr-grid{grid-template-columns:1fr}.pdr-refresh .pdr-includes{grid-template-columns:1fr}}
+
+/* Keep the follow-up illustration secondary to the product offer. */
+.pdr-refresh .pdr-previews{max-width:720px}
