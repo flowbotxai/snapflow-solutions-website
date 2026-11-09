@@ -8,6 +8,7 @@ await rm(out, { recursive: true, force: true });
 await mkdir(out);
 const assets = new Set(['assets','css','js','campaign']);
 for (const item of await readdir(root, { withFileTypes: true })) {
+  if (production && /^newsletter-(template|welcome)-preview\.html$/.test(item.name)) continue;
   if (assets.has(item.name) || (!item.isDirectory() && (/\.html$/.test(item.name) || ['robots.txt','sitemap.xml','_redirects'].includes(item.name)))) {
     await cp(resolve(root,item.name),resolve(out,item.name),{recursive:true});
   } else if (item.isDirectory() && !item.name.startsWith('.') && !['dist','scripts','test','netlify'].includes(item.name)) {

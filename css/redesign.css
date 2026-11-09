@@ -2943,3 +2943,18 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
   .pdr-hero__grid.sf-mobile-image-first>figure{grid-column:1;grid-row:1;margin:var(--mobile-visual-inset) 0 0}
   .pdr-hero__grid.sf-mobile-image-first>div{grid-column:1;grid-row:2;padding-top:0}
 }
+
+/* Newsletter: a compact, standalone opt-in, separate from sales inquiries. */
+.sf-newsletter{background:#f5f4f0;border-top:1px solid #e3ddd2;border-bottom:1px solid #e3ddd2;padding:64px 0}
+.sf-newsletter-grid{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:56px}
+.sf-newsletter h2{font-size:clamp(30px,3.5vw,42px);line-height:1.15;margin:14px 0 18px;color:var(--navy)}
+.sf-newsletter p{font-size:18px;line-height:1.65;color:var(--muted)}
+.sf-newsletter-topics{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:22px;font-size:15px;color:var(--navy);font-weight:600}
+.sf-newsletter-topics span{border-bottom:2px solid #b8892c;padding-bottom:5px}
+.sf-newsletter form{min-width:0}.sf-newsletter label{display:block;font-size:17px;font-weight:600;margin-bottom:10px;color:var(--navy)}
+.sf-newsletter-fields{display:flex;flex-wrap:wrap;gap:14px}.sf-newsletter-fields input{flex:1 1 220px;min-width:0;width:100%;padding:14px 16px;border:1px solid #bbc9d2;border-radius:10px;background:white;font:18px/1.4 Inter,sans-serif;color:var(--navy)}
+.sf-newsletter input:focus-visible{outline:3px solid #347da9;outline-offset:3px}
+.sf-newsletter .sf-newsletter-note{font-size:14px;margin:16px 0 0}.sf-newsletter-note a{text-decoration:underline;text-underline-offset:3px}
+.sf-newsletter-honeypot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+#newsletter-status{font-size:16px;margin:12px 0 0}#newsletter-security{margin-top:14px}
+@media(max-width:800px){.sf-newsletter{padding:44px 0}.sf-newsletter-grid{grid-template-columns:minmax(0,1fr);gap:28px}.sf-newsletter-fields{flex-direction:column}.sf-newsletter-fields input{flex:auto}.sf-newsletter-fields button{align-self:center}}
