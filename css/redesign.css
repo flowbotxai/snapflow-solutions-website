@@ -2912,3 +2912,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
   .service-overview .website-feature>figure{grid-column:1;grid-row:1}
   .service-overview .website-feature>.website-feature-copy{grid-column:1;grid-row:2;padding-bottom:28px}
 }
+
+/* Compact mobile header; the primary action belongs inside the expanded menu. */
+.site-header .header-get-started--mobile{display:none!important}
+@media(max-width:800px){
+  .site-header__inner>.header-get-started{display:none!important}
+  .site-header .sample-nav .header-get-started--mobile{display:inline-flex!important;align-self:flex-start;justify-content:center;margin-top:8px;padding:12px 20px;min-height:48px;border:2px solid #168BFF;color:var(--navy)}
+}
+@media(max-width:900px){
+  .service-overview .website-feature>figure{margin-top:20px}
+}
