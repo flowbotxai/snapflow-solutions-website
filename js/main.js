@@ -41,19 +41,8 @@
     });
   });
 
-  var requestSuccess = document.body.getAttribute('data-request-success');
-  if (requestSuccess && typeof gtag === 'function') {
-    var successEvent = requestSuccess === 'project' ? 'project_request_submit' : 'work_request_submit';
-    var successKey = 'snapflow_' + successEvent + '_' + window.location.pathname;
-    if (!window.sessionStorage.getItem(successKey)) {
-      window.sessionStorage.setItem(successKey, '1');
-      gtag('event', successEvent, { request_type: requestSuccess });
-      gtag('event', 'generate_lead', {
-        lead_source: 'client_request',
-        request_type: requestSuccess
-      });
-    }
-  }
+  // Confirmation-page visits are not submission evidence. Native GHL
+  // success tracking must be verified before counting request conversions.
 
   // -- Mobile nav toggle -------------------------------------------------
   // Toggles the single .site-header__nav list rather than a duplicate mobile
