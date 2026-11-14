@@ -57,3 +57,28 @@
     grid-template-columns: 1fr;
   }
 }
+.crm-record {
+  color: #10233d;
+  background: #fffdf7;
+  border: 1px solid #e4dac4;
+  border-radius: 20px;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+}
+.crm-record h3 {
+  margin: .4rem 0 0;
+  font-size: 1.65rem;
+}
+.crm-record p {
+  margin: .25rem 0 1rem;
+}
+.crm-record dl {
+  margin: 0;
+}
+.crm-record dt {
+  font-weight: 700;
+  padding-top: .65rem;
+  border-top: 1px solid #e4dac4;
+}
+.crm-record dd {
+  margin: .2rem 0 .65rem;
+}
