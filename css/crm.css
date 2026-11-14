@@ -142,3 +142,20 @@
 .crm-page .crm-story figcaption {
   color: #e8eef8;
 }
+
+.crm-inbox-copy ul {
+  padding-inline-start: 1.35rem;
+  margin: 0 0 1.5rem;
+  list-style: disc outside;
+  color: #e8eef8;
+  line-height: 1.55;
+}
+.crm-inbox-copy li + li {
+  margin-top: .65rem;
+}
+.crm-inbox-copy li::marker {
+  color: #e5bb68;
+}
+.crm-inbox-copy strong {
+  color: #fff;
+}
