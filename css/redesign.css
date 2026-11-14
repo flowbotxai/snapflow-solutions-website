@@ -2962,3 +2962,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00
 /* Frame the native inquiry form in SnapFlow gold. */
 .contact-ghl{box-sizing:border-box;border:2px solid #B8892C;border-radius:16px;padding:12px;background:#fff}
 .contact-ghl .contact-form-fallback{margin:12px 8px 4px;font-size:14px;line-height:1.5}
+
+.home-business-tools { padding: clamp(3rem, 6vw, 5rem) 0; background: #fff; color: #002b43; }
+.home-business-tools h2 { margin: 0 0 2rem; font-size: clamp(1.8rem, 4vw, 2.65rem); text-align: center; }
+.home-business-tools__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.home-business-tools__grid article { display: flex; flex-direction: column; align-items: flex-start; border-top: 2px solid #b8892c; padding-top: 1.25rem; }
+.home-business-tools__grid h3 { margin: 0 0 .5rem; font-size: 1.45rem; }
+.home-business-tools__grid p { margin: 0 0 1.25rem; max-width: 48ch; line-height: 1.65; color: #465e70; }
+.home-business-tools__grid a { margin-top: auto; }
+@media (max-width: 640px) { .home-business-tools__grid { grid-template-columns: 1fr; } }
