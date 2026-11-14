@@ -145,17 +145,24 @@
 
 .crm-inbox-copy ul {
   padding-inline-start: 1.35rem;
-  margin: 0 0 1rem;
+  margin: 0;
   list-style: disc outside;
   color: #e8eef8;
   line-height: 1.55;
 }
 .crm-inbox-copy li + li {
-  margin-top: .4rem;
+  margin-top: .65rem;
 }
 .crm-inbox-copy li::marker {
   color: #e5bb68;
 }
 .crm-inbox-copy strong {
   color: #fff;
+}
+
+.crm-page .crm-story.section {
+  padding-block: clamp(3rem, 7vw, 5.25rem);
+}
+.crm-inbox-copy .service-actions {
+  justify-content: flex-start;
 }
