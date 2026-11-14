@@ -179,3 +179,24 @@
   border-radius: 1rem;
   background: #b38636;
 }
+
+/* Let the wide calendar and channel icons read as a single illustration. */
+.crm-social .crm-story__inner {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+.crm-social .crm-story__inner > div {
+  max-width: 42rem;
+}
+.crm-social-art {
+  width: 100%;
+  max-width: 56rem;
+  min-width: 0;
+  margin: 0;
+}
+.crm-social-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
