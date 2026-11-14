@@ -134,3 +134,11 @@
   display: inline-block;
   margin-bottom: .25rem;
 }
+
+.crm-page .crm-story h2 {
+  color: #fff;
+}
+.crm-page .crm-story p,
+.crm-page .crm-story figcaption {
+  color: #e8eef8;
+}
