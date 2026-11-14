@@ -113,3 +113,24 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.crm-social .crm-story__inner > div > p {
+  margin: 1rem 0 0;
+  line-height: 1.65;
+}
+.crm-social .crm-story__inner > div > ul {
+  margin: 1.15rem 0 1.4rem;
+  padding-inline-start: 1.35rem;
+  list-style: disc outside;
+  line-height: 1.55;
+}
+.crm-social li + li {
+  margin-top: .65rem;
+}
+.crm-social li::marker {
+  color: #8a6324;
+}
+.crm-social .crm-story__inner > div > p > strong:first-child {
+  display: inline-block;
+  margin-bottom: .25rem;
+}
