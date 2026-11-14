@@ -164,5 +164,5 @@
   padding-block: clamp(3rem, 7vw, 5.25rem);
 }
 .crm-inbox-copy .service-actions {
-  justify-content: flex-start;
+  justify-content: center;
 }
