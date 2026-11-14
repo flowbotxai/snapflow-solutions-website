@@ -121,3 +121,11 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.crm-page .hero { background: #f3f0e8; }
+.crm-mascot { width: min(100%, 22rem); justify-self: center; }
+.crm-mascot img { box-shadow: none; border-radius: 0; }
+.crm-dashboard-demo .crm-hero-image { max-width: 36rem; margin: 2rem auto 0; }
+@media (max-width: 800px) {
+  .crm-mascot { width: min(70%, 16rem); }
+}
