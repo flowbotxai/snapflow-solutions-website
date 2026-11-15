@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://snapflowsolutions.com/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://snapflowsolutions.com/ai-implementation/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -67,4 +67,6 @@
   <url><loc>https://snapflowsolutions.com/customer-communication/</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://snapflowsolutions.com/customer-management-admin-automation/</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://snapflowsolutions.com/data-analysis-reporting/</loc><lastmod>2026-11-08</lastmod></url>
-<url><loc>https://snapflowsolutions.com/paid-advertising/</loc><lastmod>2026-11-08</lastmod></url><url><loc>https://snapflowsolutions.com/seo-ai-search/</loc><lastmod>2026-11-08</lastmod></url></urlset>
+<url><loc>https://snapflowsolutions.com/paid-advertising/</loc><lastmod>2026-11-08</lastmod></url><url><loc>https://snapflowsolutions.com/seo-ai-search/</loc><lastmod>2026-11-08</lastmod></url>  <url><loc>https://snapflowsolutions.com/crm/</loc></url>
+  <url><loc>https://snapflowsolutions.com/about/</loc><lastmod>2026-11-15</lastmod></url>
+</urlset>
